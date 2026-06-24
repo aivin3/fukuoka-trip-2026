@@ -3,217 +3,199 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#15325f">
-<title>福岡輕鬆慢遊 8 天</title>
+<meta name="theme-color" content="#0ea5b7">
+<title>福岡親子和風 8 天</title>
 <style>
   :root{
-    --cream:#faf3e2; --cream2:#fffdf6; --ink:#222634; --ink2:#4a4f60; --muted:#857a63;
-    --indigo:#1f4e8c; --indigo-d:#15325f; --vermil:#e04a2f; --vermil-d:#b9381f;
-    --gold:#cf9b34; --matcha:#6f9a3c; --sky:#5fa8d3; --pink:#ef9aa6;
-    --line:#2a2f3a; --line-soft:rgba(34,38,52,.16);
-    --radius:16px; --maxw:720px;
+    --ink:#16213e; --ink2:#3a4a72; --muted:#6b7794;
+    --indigo:#1b3a8c; --indigo2:#2a4cc7; --ai:#10539b; --aka:#e8334a; --aka2:#ff5168; --gold:#f2b134; --good:#138a5a;
+    --cream:#fbf6ea; --paper:#fffdf6; --line:rgba(27,58,140,.18);
+    --radius:16px; --maxw:700px;
   }
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
   html,body{margin:0;padding:0}
   body{
-    color:var(--ink); min-height:100vh; position:relative;
-    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Mincho ProN","PingFang HK","Noto Sans HK","Yu Mincho",sans-serif;
-    line-height:1.72; font-size:16px; padding-bottom:env(safe-area-inset-bottom);
-    background-color:#f3ead3;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='22' viewBox='0 0 44 22'%3E%3Cg fill='none' stroke='%231f4e8c' stroke-opacity='0.10' stroke-width='1.1'%3E%3Cpath d='M0 22a11 11 0 0 1 22 0M22 22a11 11 0 0 1 22 0M-11 11a11 11 0 0 1 22 0M11 11a11 11 0 0 1 22 0M33 11a11 11 0 0 1 22 0'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment:fixed;
+    color:var(--ink); min-height:100vh; font-size:16px; line-height:1.62;
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang HK","Noto Sans HK","Hiragino Sans","Yu Gothic","Microsoft JhengHei",sans-serif;
+    padding-bottom:env(safe-area-inset-bottom);
+    background-color:var(--cream);
+    background-image:radial-gradient(rgba(27,58,140,.11) 1.5px, transparent 1.6px);
+    background-size:18px 18px; background-attachment:fixed;
   }
-  /* 角落和風夏日裝飾 */
-  body::before,body::after{content:"";position:fixed;z-index:0;pointer-events:none;opacity:.5}
-  body::before{top:78px;right:-26px;width:140px;height:140px;
-    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23e04a2f' stroke-width='2' stroke-linecap='round' stroke-opacity='.5'%3E%3Cline x1='32' y1='32' x2='32' y2='8'/%3E%3Cline x1='32' y1='32' x2='32' y2='56'/%3E%3Cline x1='32' y1='32' x2='8' y2='32'/%3E%3Cline x1='32' y1='32' x2='56' y2='32'/%3E%3Cline x1='32' y1='32' x2='15' y2='15'/%3E%3Cline x1='32' y1='32' x2='49' y2='49'/%3E%3Cline x1='32' y1='32' x2='15' y2='49'/%3E%3Cline x1='32' y1='32' x2='49' y2='15'/%3E%3C/g%3E%3Cg fill='%23cf9b34' fill-opacity='.55'%3E%3Ccircle cx='32' cy='8' r='2.4'/%3E%3Ccircle cx='32' cy='56' r='2.4'/%3E%3Ccircle cx='8' cy='32' r='2.4'/%3E%3Ccircle cx='56' cy='32' r='2.4'/%3E%3Ccircle cx='15' cy='15' r='2.4'/%3E%3Ccircle cx='49' cy='49' r='2.4'/%3E%3Ccircle cx='15' cy='49' r='2.4'/%3E%3Ccircle cx='49' cy='15' r='2.4'/%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat}
-  body::after{bottom:8px;left:-30px;width:130px;height:130px;
-    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M40 18c-9-2-20 3-22 14-1 8 4 15 12 16 9 1 16-5 17-13' fill='none' stroke='%231f4e8c' stroke-width='2.4' stroke-opacity='.4' stroke-linecap='round'/%3E%3Cpath d='M42 16c5 2 9 7 8 13l8-3-5 8 8 1-8 4' fill='%23e04a2f' fill-opacity='.4'/%3E%3Ccircle cx='30' cy='30' r='3' fill='%23222634' fill-opacity='.4'/%3E%3C/svg%3E") center/contain no-repeat}
-
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 15px;position:relative;z-index:1}
-  a{color:var(--indigo)}
-  h1,h2,h3{margin:0;line-height:1.3}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 14px}
+  a{color:var(--ai);text-decoration:none;font-weight:700}
+  h1,h2,h3{margin:0;line-height:1.22}
   .muted{color:var(--muted)} .small{font-size:13px}
 
-  /* 頂部模式列 */
+  /* Brand 和風 logo */
+  .brand{display:flex;align-items:center;gap:10px;max-width:var(--maxw);margin:0 auto;padding:11px 16px 6px}
+  .brand .logo{font-size:22px;width:38px;height:38px;display:grid;place-items:center;
+    background:var(--aka);color:#fff;border-radius:12px;box-shadow:3px 3px 0 rgba(27,58,140,.25);transform:rotate(-3deg)}
+  .brand .bt{font-weight:900;font-size:20px;letter-spacing:1px;color:var(--indigo)}
+  .brand .bt b{color:var(--aka)}
+  .brand .brand-tag{margin-left:auto;font-size:11px;font-weight:800;letter-spacing:2px;color:var(--muted)}
+
+  /* Topbar */
   .topbar{position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:8px;
-    padding:9px 15px;background:rgba(250,243,226,.92);backdrop-filter:blur(8px);border-bottom:2px solid var(--line)}
-  .modetabs{display:flex;gap:8px}
-  .modetabs button{background:var(--cream2);color:var(--ink2);border:2px solid var(--line);border-radius:999px;
-    padding:6px 15px;font-size:14px;font-weight:800;cursor:pointer}
-  .modetabs button.active{background:var(--vermil);color:#fff;border-color:var(--vermil-d)}
-  .printbtn{display:inline-flex;align-items:center;gap:6px;cursor:pointer;background:var(--indigo);color:#fff;
-    border:2px solid var(--indigo-d);padding:7px 13px;border-radius:999px;font-size:13.5px;font-weight:800}
+    padding:8px 14px;background:var(--paper);border-bottom:3px solid var(--indigo)}
+  .modetabs{display:flex;gap:7px}
+  .modetabs button{background:#fff;color:var(--indigo);border:2px solid var(--indigo);border-radius:10px;padding:6px 14px;font-size:14px;font-weight:900;cursor:pointer}
+  .modetabs button.active{background:var(--aka);color:#fff;border-color:var(--aka);box-shadow:2px 2px 0 rgba(27,58,140,.25)}
+  .printbtn{display:inline-flex;align-items:center;gap:6px;cursor:pointer;background:var(--indigo);color:#fff;border:0;
+    padding:8px 14px;border-radius:10px;font-size:13.5px;font-weight:900;box-shadow:2px 2px 0 rgba(232,51,74,.3)}
+  .printbtn:active{transform:translate(1px,1px)}
 
-  /* 封面 */
-  .cover{position:relative;border-radius:22px;overflow:hidden;margin:12px 0 6px;border:3px solid var(--line);
-    background:var(--indigo-d);box-shadow:8px 8px 0 rgba(34,38,52,.18)}
-  .cover .inner{position:relative;z-index:2;padding:22px 20px 24px;color:#fff}
-  .cover .seig{position:absolute;inset:0;z-index:0;opacity:.5;
-    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='22' viewBox='0 0 44 22'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.16' stroke-width='1.1'%3E%3Cpath d='M0 22a11 11 0 0 1 22 0M22 22a11 11 0 0 1 22 0M-11 11a11 11 0 0 1 22 0M11 11a11 11 0 0 1 22 0M33 11a11 11 0 0 1 22 0'/%3E%3C/g%3E%3C/svg%3E")}
-  .logo{display:flex;align-items:center;gap:11px;margin-bottom:6px}
-  .logo .mark{width:46px;height:46px;flex:0 0 auto}
-  .logo .wm{font-weight:900;font-size:13px;letter-spacing:4px;color:#ffd98a}
-  .logo .wm b{display:block;font-size:11px;letter-spacing:5px;color:rgba(255,255,255,.7);font-weight:700}
-  .cover .kicker{font-size:12px;font-weight:800;letter-spacing:3px;color:#ffd98a;text-transform:uppercase}
-  .cover h1{font-size:30px;font-weight:900;margin-top:7px;text-shadow:2px 2px 0 rgba(0,0,0,.18)}
-  .cover .sub{margin-top:8px;color:rgba(255,255,255,.94);font-weight:600;font-size:14.5px}
-  .cover .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
-  .chip{background:rgba(255,255,255,.14);border:1.5px solid rgba(255,255,255,.4);padding:5px 12px;border-radius:999px;
-    font-size:12.5px;color:#fff;font-weight:700;white-space:nowrap}
-  .cover .hero{margin-top:16px;background:#fff;padding:7px 7px 12px;border-radius:6px;transform:rotate(-1.2deg);
-    box-shadow:4px 6px 0 rgba(0,0,0,.22);position:relative}
-  .cover .hero img{width:100%;display:block;border-radius:3px}
-  .cover .hero .cap{text-align:center;font-size:12px;color:#555;font-weight:700;margin-top:6px;letter-spacing:1px}
-  .cover .hero::before{content:"";position:absolute;top:-9px;left:50%;transform:translateX(-50%) rotate(2deg);
-    width:64px;height:18px;background:rgba(207,155,52,.7);border:1px dashed rgba(0,0,0,.15)}
+  /* Cover 和風：藍染 + 日の丸 + 波 */
+  .cover{position:relative;border-radius:18px;overflow:hidden;padding:30px 20px 34px;margin:6px 0 6px;
+    background:linear-gradient(160deg,#122e63 0%,#1b3a8c 55%,#2a4cc7 100%);
+    border:3px solid var(--ink); box-shadow:6px 6px 0 rgba(232,51,74,.35)}
+  .cover .hero{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center;opacity:.22}
+  .cover .veil{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(18,46,99,.55),rgba(18,46,99,.82))}
+  .cover::before{content:"";position:absolute;top:16px;right:18px;z-index:1;width:84px;height:84px;border-radius:50%;
+    background:radial-gradient(circle at 38% 36%,#ff7d8e,#e8334a 72%);box-shadow:0 0 0 8px rgba(232,51,74,.2)}
+  .cover::after{content:"";position:absolute;left:0;right:0;bottom:0;height:22px;z-index:3;
+    background:radial-gradient(circle at 11px -4px,transparent 12px,var(--cream) 13px) repeat-x;background-size:22px 22px}
+  .cover .ct{position:relative;z-index:2}
+  .cover .kicker{font-size:12px;font-weight:900;letter-spacing:4px;color:var(--gold);text-transform:uppercase}
+  .cover h1{font-size:30px;font-weight:900;color:#fff;letter-spacing:1px;margin-top:7px;text-shadow:3px 3px 0 rgba(0,0,0,.25)}
+  .cover .sub{margin-top:8px;color:#eaf0ff;font-weight:700}
+  .cover .deco{margin-top:13px;font-size:22px;letter-spacing:8px}
+  .cover .meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .chip{background:rgba(255,255,255,.16);border:2px solid rgba(255,255,255,.5);padding:5px 11px;border-radius:999px;font-size:13px;color:#fff;font-weight:800;white-space:nowrap}
 
-  /* 導覽 */
-  .nav{position:sticky;top:51px;z-index:30;margin:12px -15px 0}
-  .nav .scroller{display:flex;gap:8px;overflow-x:auto;padding:10px 15px;scrollbar-width:none;
-    background:rgba(243,234,211,.92);backdrop-filter:blur(8px);border-top:2px solid var(--line-soft);border-bottom:2px solid var(--line-soft)}
+  /* Nav */
+  .nav{position:sticky;top:50px;z-index:30;margin:10px -14px 0}
+  .nav .scroller{display:flex;gap:7px;overflow-x:auto;padding:9px 14px;scrollbar-width:none;background:var(--paper);border-top:2px solid var(--line);border-bottom:2px solid var(--line)}
   .nav .scroller::-webkit-scrollbar{display:none}
-  .nav button{flex:0 0 auto;background:var(--cream2);color:var(--ink2);border:2px solid var(--line);
-    border-radius:999px;padding:6px 14px;font-size:13.5px;font-weight:800;cursor:pointer}
-  .nav button.active{background:var(--indigo);color:#fff;border-color:var(--indigo-d)}
+  .nav button{flex:0 0 auto;background:#fff;color:var(--indigo);border:2px solid var(--indigo);border-radius:999px;padding:6px 13px;font-size:14px;font-weight:800;cursor:pointer}
+  .nav button.active{background:var(--aka);color:#fff;border-color:var(--aka)}
 
-  section{margin:26px 0}
-  .sec-title{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:900;margin:0 0 14px;color:var(--indigo-d)}
-  .sec-title .stamp{width:34px;height:34px;flex:0 0 auto;border:2.5px solid var(--vermil);border-radius:9px;
-    display:flex;align-items:center;justify-content:center;color:var(--vermil);font-size:18px;transform:rotate(-4deg);background:rgba(224,74,47,.06)}
+  section{margin:20px 0}
+  .sec-title{display:flex;align-items:center;gap:9px;font-size:19px;font-weight:900;margin:0 0 13px;color:var(--indigo);
+    border-bottom:3px dashed var(--aka);padding-bottom:8px}
+  .sec-title .i{font-size:22px}
 
-  .card{background:var(--cream2);border:2.5px solid var(--line);border-radius:var(--radius);padding:18px;margin-bottom:15px;
-    box-shadow:5px 5px 0 rgba(34,38,52,.12);position:relative}
-  .card.tab::before{content:"";position:absolute;left:20px;top:-9px;width:54px;height:11px;border-radius:3px;background:var(--gold);border:2px solid var(--line)}
+  .card{background:#fff;border:2.5px solid var(--indigo);border-radius:var(--radius);padding:15px;margin-bottom:14px;box-shadow:5px 5px 0 rgba(27,58,140,.16)}
 
-  ul.jp{margin:0;padding-left:4px;list-style:none}
-  ul.jp li{position:relative;padding-left:22px;margin:9px 0}
-  ul.jp li::before{content:"❖";position:absolute;left:0;color:var(--vermil);font-size:13px;top:1px}
+  /* Day */
+  .day-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px}
+  .day-head .d{font-size:13.5px;font-weight:900;letter-spacing:.5px;color:#fff;background:var(--aka);
+    padding:5px 12px;border-radius:9px;box-shadow:2px 2px 0 rgba(27,58,140,.3);transform:rotate(-1.5deg)}
+  .day-theme{font-size:18px;font-weight:900;margin:6px 0 12px;color:var(--ink)}
+  .wx{display:inline-flex;gap:6px;align-items:center;font-size:13px;color:var(--indigo);font-weight:800;background:#eef2ff;border:2px solid var(--line);padding:3px 10px;border-radius:999px}
 
-  /* 日子 */
-  .day-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:7px}
-  .day-head .d{font-size:13.5px;font-weight:900;letter-spacing:1px;color:#fff;background:var(--vermil);
-    padding:5px 13px;border-radius:8px;border:2px solid var(--vermil-d);box-shadow:2px 2px 0 rgba(34,38,52,.18)}
-  .day-theme{font-size:18.5px;font-weight:900;margin:5px 0 14px;color:var(--ink);padding-bottom:9px;border-bottom:2.5px dotted var(--line-soft)}
-  .wx{display:inline-flex;gap:6px;align-items:center;font-size:12.5px;color:var(--ink2);font-weight:800;
-    background:var(--cream);border:2px solid var(--line-soft);padding:3px 10px;border-radius:999px}
-
-  .act{display:flex;gap:13px;padding:15px 0;border-top:2px dotted var(--line-soft)}
+  .act{display:flex;gap:12px;padding:13px 0;border-top:2px dotted var(--line)}
   .act:first-of-type{border-top:0;padding-top:4px}
-  .act .time{flex:0 0 52px;font-weight:900;color:#fff;font-size:12px;text-align:center;
-    background:var(--indigo);border:2px solid var(--indigo-d);border-radius:9px;padding:6px 3px;height:fit-content}
+  .act .time{flex:0 0 56px;font-weight:900;color:#fff;font-size:12.5px;text-align:center;background:var(--indigo);border-radius:9px;padding:5px 4px;height:fit-content;box-shadow:2px 2px 0 rgba(232,51,74,.3)}
   .act .body{flex:1;min-width:0}
-  .act .nm{font-weight:900;font-size:17px;color:var(--ink)}
-  .act .det{font-size:13.5px;color:var(--ink2);margin-top:4px}
-  .act .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
-  .tag{font-size:12px;padding:3px 10px;border-radius:999px;background:var(--cream);border:2px solid var(--line-soft);color:var(--ink2);white-space:nowrap;font-weight:700}
-  .tag.cost{background:rgba(207,155,52,.14);border-color:var(--gold);color:#8a6410}
-  .tag.free{background:rgba(111,154,60,.16);border-color:var(--matcha);color:#3f5a1c}
+  .act .nm{font-weight:900;font-size:16.5px;color:var(--ink)}
+  .act .det{font-size:13.5px;color:var(--ink2);margin-top:3px}
+  .act .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+  .tag{font-size:12px;padding:2.5px 9px;border-radius:999px;background:#fff;border:2px solid var(--indigo);color:var(--indigo);white-space:nowrap;font-weight:800}
+  .tag.cost{border-color:var(--aka);color:var(--aka);background:#fff5f6}
+  .tag.free{border-color:var(--good);color:var(--good);background:#f0fbf5}
+  .act img.thumb{width:100%;border-radius:12px;margin-top:10px;display:block;border:2.5px solid var(--ink)}
+  .act-ph{margin-top:10px;height:116px;border-radius:13px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;
+    color:#fff;font-weight:900;font-size:15.5px;text-shadow:2px 2px 0 rgba(0,0,0,.25);border:2.5px solid var(--ink);
+    background:linear-gradient(125deg,var(--indigo) 0%,var(--indigo2) 50%,var(--aka) 100%)}
+  .act-ph .pe{font-size:38px;line-height:1}
+  .act-ph span{max-width:82%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .mustdo{margin-top:8px;background:#fff8e8;border:2px solid var(--gold);border-radius:11px;padding:8px 11px;font-size:13.5px;color:#7a5b07}
+  .mustdo b{color:var(--aka)}
+  .transfer{margin-top:11px;font-size:13px;color:var(--indigo);background:#eef2ff;border-left:4px solid var(--indigo);border-radius:0 9px 9px 0;padding:7px 11px;font-weight:700}
+  .meal{background:#fff5f6;border:2px solid var(--aka);border-radius:12px;padding:11px 12px;margin-top:4px}
+  .meal .mt{font-weight:900;color:var(--aka)}
 
-  .act img.photo{width:100%;margin-top:11px;display:block;background:#fff;padding:6px 6px 8px;border:2px solid var(--line);border-radius:5px;box-shadow:3px 4px 0 rgba(34,38,52,.13)}
-  .ill{margin-top:11px;display:flex;align-items:center;gap:13px;background:repeating-linear-gradient(45deg,rgba(31,78,140,.05) 0 10px,transparent 10px 20px);
-    border:2.5px dashed var(--line-soft);border-radius:13px;padding:14px 16px}
-  .ill svg{width:62px;height:62px;flex:0 0 auto}
-  .ill .lbl{font-weight:800;font-size:14px;color:var(--ink2)}
-  .ill .lbl b{display:block;font-size:11.5px;color:var(--muted);font-weight:700;letter-spacing:1px;margin-top:2px}
+  .btn-map,.btn-link,.btn-menu,.btn-photo{display:inline-flex;align-items:center;gap:5px;margin-top:9px;padding:7px 12px;border-radius:10px;font-size:13px;font-weight:900;color:#fff;border:0;box-shadow:2px 2px 0 rgba(0,0,0,.16)}
+  .btn-map{background:var(--indigo)} .btn-link{background:var(--gold);color:#3a2c02} .btn-menu{background:var(--aka)} .btn-photo{background:#7b3fb5}
+  .btn-map:active,.btn-link:active,.btn-menu:active,.btn-photo:active{transform:translate(1px,1px)}
 
-  .mustdo{margin-top:9px;background:rgba(224,74,47,.07);border:2px solid rgba(224,74,47,.3);border-radius:11px;padding:9px 12px;font-size:13.5px}
-  .mustdo b{color:var(--vermil-d)}
-  .transfer{margin-top:11px;font-size:13px;color:var(--ink2);background:rgba(31,78,140,.07);border-left:4px solid var(--indigo);border-radius:0 9px 9px 0;padding:8px 12px;font-weight:600}
-  .meal{background:rgba(207,155,52,.1);border:2px solid var(--gold);border-radius:12px;padding:12px;margin-top:4px}
-  .meal .mt{font-weight:900;color:#7a5a12}
+  .backup{margin-top:12px;background:#eef2ff;border:2px dashed var(--indigo);border-radius:12px;padding:10px 12px}
+  .backup .bt{font-weight:900;font-size:13.5px;color:var(--indigo);margin-bottom:5px}
+  .backup ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--ink2)} .backup li{margin:3px 0}
 
-  .btn-map,.btn-link,.btn-menu,.btn-photo{display:inline-flex;align-items:center;gap:5px;margin-top:10px;padding:7px 13px;border-radius:10px;font-size:13px;font-weight:800;border:2px solid}
-  .btn-map{background:rgba(31,78,140,.1);border-color:var(--indigo);color:var(--indigo-d)}
-  .btn-link{background:rgba(111,154,60,.12);border-color:var(--matcha);color:#3f5a1c}
-  .btn-menu{background:rgba(207,155,52,.14);border-color:var(--gold);color:#8a6410}
-  .btn-photo{background:rgba(224,74,47,.1);border-color:var(--vermil);color:var(--vermil-d)}
+  .alt-group{margin-bottom:16px}
+  .alt-group h3{font-size:16px;font-weight:900;margin:0 0 9px;display:flex;align-items:center;gap:7px;color:var(--indigo)}
+  .alt-item,.din-item{background:var(--paper);border:2px solid var(--indigo);border-radius:13px;padding:11px 12px;margin-bottom:10px;box-shadow:3px 3px 0 rgba(27,58,140,.12)}
+  .alt-item .an,.din-item .an{font-weight:900;font-size:15.5px;color:var(--ink)}
+  .alt-item .ad,.din-item .ad{font-size:12.5px;color:var(--muted);margin-top:2px}
+  .alt-item .anote,.din-item .anote{font-size:13.5px;color:var(--ink2);margin-top:5px}
+  .din-item .sig{font-size:13px;color:var(--aka);margin-top:5px;font-weight:800}
+  .alt-item .arow,.din-item .arow{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin-top:6px}
+  .din-item img.thumb{width:100%;height:150px;object-fit:cover;border-radius:11px;margin:0 0 9px;border:2.5px solid var(--ink);display:block}
 
-  .backup{margin-top:13px;background:rgba(31,78,140,.05);border:2px dashed var(--indigo);border-radius:12px;padding:11px 13px}
-  .backup .bt{font-weight:900;font-size:13.5px;color:var(--indigo-d);margin-bottom:6px}
-  .backup ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--ink2)}
-  .backup li{margin:4px 0}
-
-  .alt-group{margin-bottom:18px}
-  .alt-group h3{font-size:16.5px;font-weight:900;margin:0 0 10px;color:var(--indigo-d);display:flex;align-items:center;gap:8px}
-  .alt-item,.din-item{background:var(--cream2);border:2px solid var(--line);border-radius:13px;padding:13px;margin-bottom:11px;box-shadow:3px 3px 0 rgba(34,38,52,.1)}
-  .alt-item .an,.din-item .an{font-weight:900;font-size:16px;color:var(--ink)}
-  .alt-item .ad,.din-item .ad{font-size:12.5px;color:var(--muted);margin-top:3px;font-weight:700}
-  .alt-item .anote,.din-item .anote{font-size:13.5px;color:var(--ink2);margin-top:6px}
-  .din-item .sig{font-size:13px;color:#8a6410;margin-top:6px;font-weight:700}
-  .alt-item .arow,.din-item .arow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:7px}
-  .din-item img.photo,.alt-item img.photo{width:100%;margin:0 0 10px;display:block;background:#fff;padding:5px 5px 7px;border:2px solid var(--line);border-radius:5px}
-  .din-row{display:flex;gap:12px}
-  .din-row .di-ill{flex:0 0 56px}.din-row .di-ill svg{width:56px;height:56px}
-
-  .hotel .hn{font-weight:900;font-size:17.5px;color:var(--ink)}
-  .hotel .row{display:flex;justify-content:space-between;gap:10px;margin-top:6px;font-size:14px}
-  .hotel .price{color:#8a6410;font-weight:900}
+  .hotel .hn{font-weight:900;font-size:17px;color:var(--ink)}
+  .hotel .row{display:flex;justify-content:space-between;gap:10px;margin-top:5px;font-size:14px}
+  .hotel .price{color:var(--aka);font-weight:900}
+  .hotel img.thumb{width:100%;border-radius:12px;margin-top:10px;border:2.5px solid var(--ink)}
 
   table.bud{width:100%;border-collapse:collapse;font-size:14.5px}
-  table.bud td{padding:10px 4px;border-top:2px dotted var(--line-soft)}
+  table.bud td{padding:9px 4px;border-top:2px solid var(--line)}
   table.bud tr:first-child td{border-top:0}
   table.bud td.r{text-align:right;font-variant-numeric:tabular-nums;font-weight:800}
-  table.bud .total td{font-weight:900;font-size:16px;border-top:3px solid var(--vermil);color:var(--vermil-d)}
-  .tiers{display:flex;gap:10px;margin:2px 0 14px;overflow-x:auto;scrollbar-width:none}
-  .tier{flex:1;min-width:120px;background:var(--cream2);border:2px solid var(--line);border-radius:13px;padding:12px;text-align:center;box-shadow:3px 3px 0 rgba(34,38,52,.1)}
-  .tier .tl{font-size:13px;font-weight:900;color:var(--ink2)}
-  .tier .tv{font-size:18px;font-weight:900;margin-top:4px;color:var(--vermil-d)}
-  .tier .tp{font-size:11.5px;color:var(--muted);margin-top:3px;font-weight:600}
-  .tier.pick{border-color:var(--vermil);box-shadow:4px 4px 0 rgba(224,74,47,.25)}
+  table.bud .total td{font-weight:900;font-size:16px;border-top:3px solid var(--aka);color:var(--aka)}
+  .tiers{display:flex;gap:9px;margin:2px 0 12px;overflow-x:auto;scrollbar-width:none}
+  .tier{flex:1;min-width:120px;background:var(--paper);border:2px solid var(--indigo);border-radius:13px;padding:11px;text-align:center}
+  .tier .tl{font-size:13px;font-weight:900;color:var(--indigo)}
+  .tier .tv{font-size:18px;font-weight:900;margin-top:3px;color:var(--aka)}
+  .tier .tp{font-size:12px;color:var(--muted);margin-top:2px}
+  .tier.pick{border-color:var(--aka);box-shadow:4px 4px 0 rgba(232,51,74,.2)}
 
-  .ess{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .ess .e{background:var(--cream);border:2px solid var(--line-soft);border-radius:12px;padding:11px 13px}
+  ul.tips{margin:0;padding-left:19px} ul.tips li{margin:7px 0}
+  .ess{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+  .ess .e{background:var(--paper);border:2px solid var(--indigo);border-radius:12px;padding:10px 12px}
   .ess .e .k{font-size:12px;color:var(--muted);font-weight:800}
-  .ess .e .v{font-weight:800;font-size:14.5px;margin-top:3px;color:var(--ink)}
+  .ess .e .v{font-weight:900;font-size:14.5px;margin-top:2px;color:var(--ink)}
 
-  /* 分帳工具 */
-  #exp input,#exp select{font:inherit;padding:10px 12px;border-radius:11px;border:2px solid var(--line);background:#fff;color:var(--ink);min-width:0}
+  .reliab{font-size:12px;color:var(--muted);margin-top:9px;font-style:italic}
+  footer{text-align:center;color:var(--muted);font-size:12px;padding:24px 0 34px;font-weight:600}
+  .totop{position:fixed;right:14px;bottom:18px;z-index:40;width:46px;height:46px;border-radius:12px;background:var(--aka);color:#fff;border:2.5px solid var(--ink);font-size:20px;font-weight:900;cursor:pointer;box-shadow:3px 3px 0 rgba(27,58,140,.3);display:none}
+
+  /* 工具列 + 計錢分帳 */
+  #exp input,#exp select{font:inherit;padding:9px 11px;border-radius:10px;border:2px solid var(--indigo);background:#fff;color:var(--ink);min-width:0}
+  #exp input:focus,#exp select:focus{outline:2px solid var(--aka)}
   #exp #edesc{width:100%}
-  .exlab{font-weight:900;font-size:16.5px;color:var(--indigo-d);margin-bottom:10px}
-  .exlab2{font-weight:800;font-size:13.5px;color:var(--ink2);margin:10px 0 7px}
-  .exrow{display:flex;gap:9px;margin-top:10px}.exrow input{flex:1}
-  .exbtn{background:var(--indigo);color:#fff;border:2px solid var(--indigo-d);border-radius:11px;padding:10px 16px;font-weight:800;cursor:pointer;white-space:nowrap}
-  .exbtn.full{width:100%;margin-top:11px}.exbtn.ghost{background:rgba(224,74,47,.1);color:var(--vermil-d);border-color:var(--vermil)}
-  .chips{display:flex;flex-wrap:wrap;gap:8px}
-  .mchip{display:inline-flex;align-items:center;gap:6px;background:rgba(31,78,140,.1);border:2px solid var(--indigo);color:var(--indigo-d);padding:5px 11px;border-radius:999px;font-weight:800;font-size:13.5px}
-  .mchip button{background:none;border:0;color:var(--vermil);cursor:pointer;font-weight:900;font-size:14px;padding:0;line-height:1}
-  .wchip{display:inline-flex;align-items:center;gap:5px;background:var(--cream);border:2px solid var(--line-soft);padding:5px 11px;border-radius:999px;font-size:13.5px;font-weight:700;cursor:pointer}
-  .exitem{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:2px dotted var(--line-soft)}
+  .exlab{font-weight:900;font-size:16px;margin-bottom:9px;color:var(--indigo)}
+  .exlab2{font-weight:900;font-size:13.5px;color:var(--ink2);margin:9px 0 6px}
+  .exrow{display:flex;gap:8px;margin-top:9px} .exrow input{flex:1}
+  .exbtn{background:var(--indigo);color:#fff;border:0;border-radius:10px;padding:9px 15px;font-weight:900;cursor:pointer;white-space:nowrap;box-shadow:2px 2px 0 rgba(232,51,74,.3)}
+  .exbtn.full{width:100%;margin-top:10px;padding:11px} .exbtn.ghost{background:#fff;color:var(--aka);border:2px solid var(--aka);box-shadow:none}
+  .chips{display:flex;flex-wrap:wrap;gap:7px}
+  .mchip{display:inline-flex;align-items:center;gap:6px;background:#eef2ff;border:2px solid var(--indigo);color:var(--indigo);padding:5px 10px;border-radius:999px;font-weight:800;font-size:13.5px}
+  .mchip button{background:none;border:0;color:var(--aka);cursor:pointer;font-weight:900;font-size:14px;padding:0;line-height:1}
+  .wchip{display:inline-flex;align-items:center;gap:5px;background:#fff;border:2px solid var(--line);padding:5px 10px;border-radius:999px;font-size:13.5px;font-weight:700;cursor:pointer}
+  .exitem{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:9px 0;border-top:2px dotted var(--line)}
   .exitem:first-of-type{border-top:0}
-  .examt{font-weight:900;white-space:nowrap;display:flex;align-items:center;gap:8px}
-  .examt button{background:none;border:0;color:var(--vermil);cursor:pointer;font-weight:900;font-size:15px}
+  .examt{font-weight:900;white-space:nowrap;display:flex;align-items:center;gap:8px;color:var(--ink)}
+  .examt button{background:none;border:0;color:var(--aka);cursor:pointer;font-weight:900;font-size:15px}
   .exsum{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:5px 0;font-size:14.5px}
-  .exsum .pos{color:#3f5a1c}.exsum .neg{color:var(--vermil-d)}
-  .extx{background:rgba(31,78,140,.08);border-left:4px solid var(--indigo);border-radius:0 10px 10px 0;padding:8px 12px;margin:6px 0;font-weight:700}
-  .bar{height:13px;border-radius:999px;background:rgba(34,38,52,.12);overflow:hidden;margin:8px 0;border:1.5px solid var(--line-soft)}
-  .barfill{height:100%;background:linear-gradient(90deg,var(--matcha),var(--gold),var(--vermil))}
-  .exrate{display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--muted);white-space:nowrap;font-weight:700}
-  .exrate input{width:58px;padding:7px 8px}
-
-  .reliab{font-size:12px;color:var(--muted);margin-top:10px;font-style:italic}
-  footer{text-align:center;color:var(--muted);font-size:12px;padding:26px 0 36px}
-  .totop{position:fixed;right:15px;bottom:18px;z-index:40;width:48px;height:48px;border-radius:50%;
-    background:var(--vermil);color:#fff;border:2px solid var(--vermil-d);font-size:20px;font-weight:900;cursor:pointer;box-shadow:3px 3px 0 rgba(34,38,52,.2);display:none}
+  .exsum .pos{color:var(--good)} .exsum .neg{color:var(--aka)}
+  .extx{background:#eef2ff;border-left:4px solid var(--indigo);border-radius:0 9px 9px 0;padding:7px 11px;margin:5px 0;font-weight:800;font-size:14px}
+  .bar{height:13px;border-radius:999px;background:#e7ecf7;overflow:hidden;margin:7px 0;border:2px solid var(--line)}
+  .barfill{height:100%;background:linear-gradient(90deg,var(--indigo),var(--gold),var(--aka))}
+  .exrate{display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--muted);white-space:nowrap}
+  .exrate input{width:56px;padding:6px 8px}
 
   @media print{
     @page{margin:11mm}
-    body{background:#fff!important;font-size:12.5px}
-    body::before,body::after,.topbar,.nav,.totop{display:none!important}
+    body{background:#fff!important;background-image:none!important;font-size:12.5px}
+    .brand,.topbar,.nav,.totop{display:none!important}
     .wrap{max-width:none}
     .cover{box-shadow:none;-webkit-print-color-adjust:exact;print-color-adjust:exact}
     section,.card,.act,.hotel,.alt-item,.din-item{break-inside:avoid;page-break-inside:avoid}
-    .card{box-shadow:none}
-    .btn-map,.btn-link,.btn-menu,.btn-photo{display:none!important}
-    .day-head .d,.act .time,.tag.cost,.tag.free,.cover,.cover .inner,.sec-title .stamp{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-    .act img.photo,.din-item img.photo{max-height:180px;object-fit:cover}
+    .card{box-shadow:none;border:1.5px solid #bcc6e0}
+    .sec-title{break-after:avoid}
+    .day-head .d,.act .time,.tag,.tag.cost,.tag.free,.mustdo,.meal{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .btn-map,.btn-link,.btn-menu,.btn-photo,.act-ph{display:none!important}
+    .act img.thumb,.hotel img.thumb,.din-item img.thumb{max-height:150px;object-fit:cover}
   }
 </style>
 </head>
 <body>
+<div class="brand"><span class="logo">⛩️</span><span class="bt">福岡 <b>たび</b></span><span class="brand-tag">FUKUOKA · KYUSHU 2026</span></div>
 <div class="topbar">
   <div class="modetabs">
-    <button id="mb-trip" class="active" onclick="setMode('trip')">📖 行程</button>
+    <button id="mb-trip" class="active" onclick="setMode('trip')">📋 行程</button>
     <button id="mb-money" onclick="setMode('money')">🧮 分帳</button>
   </div>
   <button class="printbtn" onclick="window.print()">🖨 PDF</button>
@@ -224,9 +206,10 @@
 
 <script id="trip-data" type="application/json">
 {
+  "template": "roadbook_jp.html",
   "kicker": "FUKUOKA · KYUSHU · JAPAN",
-  "title": "福岡輕鬆慢遊 8 天",
-  "subtitle": "3 大 1 小（8 歲女）· 8/22–8/29 · 必去打卡 + 高分名店 + 近郊 1.5 小時",
+  "title": "福岡親子和風 8 天",
+  "subtitle": "3 大 1 小（8 歲女）· 8/22–8/29 · KidZania・海之中道・νGundam・名店・近郊",
   "dateRange": "2026/8/22（六）– 8/29（六）",
   "travelers": "3 大人 + 1 小童（8 歲）",
   "heroImage": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Fukuoka_Skyline_of_Seaside_Momochi.jpg",
@@ -236,18 +219,18 @@
     "budget": 25000
   },
   "highlights": [
-    "必去全入：太宰府天滿宮（隈研吾星巴克）、柳川遊船、海洋世界海之中道、teamLab Forest、大濠公園、福岡塔、中洲屋台、由布院之森溫泉小鎮",
-    "★ 4 個關鍵更正：①匯率實際 HK$1≈¥20.5（比預期更抵）；②由布院之森全車指定席，乘車 1 個月前早上 10:00 開賣，暑假秒殺，必搶；③Canal City 拉麵 stadium 2025/8 已休業，唔好預設；④糸島牡蠣小屋 8 月冇（10–4 月先有）",
-    "8/24 係週一（日本好多設施休館）→ 已排 teamLab/Canal City 室內日避開",
-    "颱風季（8–10 月）：近郊日（柳川船/由布院）遇颱風停航停駛，市區室內 backup 充足可對調",
-    "獨立『餐廳指南』分博多拉麵/もつ鍋水炊き/海鮮/屋台/甜品/咖啡/居酒屋親子/お土産；活イカ・華味鳥・水たき長野出發前要預約"
+    "必去全入：KidZania 福岡（職業體驗）、海之中道海濱公園 サンシャインプール（夏季水樂園）、海洋世界 Marine World、teamLab Forest + BOSS E・ZO、Canal City、天神地下街、LaLaport 實物大 νGundam",
+    "★ 2026 八月限定捉到：Marine World『夜の水族館』8/22–23 開到 21:00、夜の動植物園週六夜場、νGundam 夜間映像 19:00–21:00、天神夏まつり（8/22–23 最後兩晚）、甘木川花火 8/22、まつりみなみ花火 8/29",
+    "★ 4 個關鍵提醒：①KidZania 8 月飛約 6/2 開賣即搶（2 部制）；②サンシャインプール 8/22–27 連開但 8/28(五) 休、WEB 預售平 ¥200/人；③由布院之森指定席乘車 1 個月前 10:00 搶；④匯率實際 HK$1≈¥20.5",
+    "8/24 週一多設施休館 → 已排室內 teamLab/BOSS E・ZO 日避開；颱風季近郊日（柳川/由布院）遇風停航可同市區對調",
+    "optional（睇時間天氣）：糸島 櫻井二見浦純白海中鳥居（要租車）、柳川遊船九州威尼斯搖船"
   ],
   "weather": {
     "summary": "全年最熱最焗：平均高溫約 32°C、濕度約 74%，午後常有雷陣雨，8–10 月颱風季。",
     "avgHigh": 32,
     "avgLow": 25,
     "rainfall": "約 10–20 雨日",
-    "clothing": "輕薄透氣衫、帽、太陽眼鏡、防曬；室內冷氣極強帶薄外套；女童帶替換衫。",
+    "clothing": "輕薄透氣衫、帽、太陽眼鏡、防曬；室內冷氣極強帶薄外套；玩水帶泳衣泳帽毛巾；女童帶替換衫。",
     "tips": "帶摺傘/雨衣+電解質；戶外排上午/黃昏、正午躲室內；颱風即查 JMA 預報，近郊日改室內並對調。"
   },
   "days": [
@@ -282,23 +265,24 @@
         {
           "time": "17:00",
           "name": "Canal City 博多（室內輕逛）",
-          "note": "運河噴泉表演+商場+戲院，落地日唔安排重點；落雨無影響",
+          "icon": "🛍️",
+          "note": "運河噴泉表演+商場+戲院，落地日唔安排重點；落雨無影響（拉麵 stadium 已休業）",
           "duration": "2h",
           "cost": "免費入場",
-          "transport": "步行/地鐵中洲川端站",
+          "transport": "地鐵中洲川端站",
           "mustDo": "睇運河噴泉光影表演（整點）",
-          "imageUrl": "",
           "mapQuery": "キャナルシティ博多",
-          "transfer": "地鐵到天神站・5 分（天神夏まつり今晚最後第二場）"
+          "transfer": "地鐵到天神站・5 分"
         },
         {
           "time": "19:00",
           "name": "天神夏まつり（最後兩晚之一）",
+          "icon": "🎐",
           "note": "★ 期間限定 7/17–8/23！盆踊+屋台+縁日攤位，市役所西側ふれあい廣場，免費（待官方確認）",
           "duration": "1.5h",
           "cost": 0,
           "transport": "地下鐵天神站",
-          "mustDo": "撈波波/射的縁日攤、屋台美食",
+          "mustDo": "撈金魚/射的縁日攤、屋台美食",
           "mapQuery": "福岡市役所 ふれあい広場"
         },
         {
@@ -326,7 +310,7 @@
     {
       "date": "8/23",
       "weekday": "週日",
-      "theme": "海洋世界海之中道（女童頭號）+ 海濱百道夕陽",
+      "theme": "東區水陸日：海之中道泳池 + Marine World + 夜の水族館",
       "weather": {
         "icon": "sunny",
         "high": 32,
@@ -335,35 +319,47 @@
       "activities": [
         {
           "time": "09:30",
-          "name": "海洋世界海之中道（マリンワールド海の中道）",
-          "note": "350 種 3 萬隻生物 + 海豚海獅 show，暑假延長開到 21:00；早到佔海豚 show 位",
+          "name": "海之中道海濱公園・サンシャインプール（夏季水樂園）",
+          "icon": "🏊",
+          "note": "起點：博多 JR 約 45–60 分（海ノ中道駅）。滑水梯+流水池+兒童池，國營大公園仲有動物之森/花園/單車；★ WEB 預售平 ¥200/人+免排隊",
           "duration": "半日",
-          "cost": "大人 ¥2,500・中小學 ¥1,200・3歲+ ¥700",
-          "transport": "JR 香椎線/觀光船約 30–40 分",
-          "mustDo": "海豚 show、企鵝、觸摸池；女童頭號景點",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Marine_World_Uminonakamichi_2.JPG",
-          "mapQuery": "マリンワールド海の中道",
-          "transfer": "渡船/JR 返市區百道・約 30 分"
+          "cost": "泳池 大人 ¥2,300・小中學 ¥1,300・3–5歲 ¥500（+公園入園 大人 ¥450・中學以下免費）",
+          "transport": "JR 香椎線 海ノ中道駅",
+          "mustDo": "玩水放電；★ 8/22–27 連開，8/28(五) 休唔好撞；自備泳衣泳帽",
+          "mapQuery": "海の中道サンシャインプール",
+          "transfer": "步行/園內接駁到隔籬 Marine World・約 10 分"
         },
         {
-          "time": "16:30",
-          "name": "海濱百道・福岡塔（黃昏夜景）",
-          "note": "人工沙灘 Marizon + 234m 海濱塔，黃昏上展望台睇日落轉夜景",
-          "duration": "2h",
-          "cost": "福岡塔 大人 ¥800・中小學 ¥500・4歲+ ¥200",
-          "transport": "巴士百道",
-          "mustDo": "福岡塔黃昏夜景、海濱百道散步",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Fukuoka_Tower_Before_Sunset.jpg",
-          "mapQuery": "福岡タワー"
+          "time": "15:30",
+          "name": "海洋世界海之中道（マリンワールド海の中道）",
+          "note": "350 種 3 萬隻生物 + 海豚海獅 show；同公園相鄰，玩完水順玩",
+          "duration": "2–3h",
+          "cost": "大人 ¥2,500・中小學 ¥1,200・3歲+ ¥700",
+          "transport": "步行",
+          "mustDo": "海豚 show、企鵝、觸摸池",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Marine_World_Uminonakamichi_2.JPG",
+          "mapQuery": "マリンワールド海の中道",
+          "transfer": "原館留低等夜場（18:00 起轉夜間燈光）"
+        },
+        {
+          "time": "18:00",
+          "name": "夜の水族館 2026（夜間水族館）",
+          "icon": "🌃",
+          "note": "★ 8/22–23 等週末開到 21:00（最終入館 20:00），魚群燈光超有氣氛；同日一張票玩到夜（待官方確認 2026 確切日）",
+          "duration": "1.5h",
+          "cost": "（多數含日間票/夜場票，查官網）",
+          "transport": "JR 海ノ中道駅",
+          "mustDo": "夜間水母/魚群燈光",
+          "mapQuery": "マリンワールド海の中道"
         }
       ],
       "backup": [
+        "8/28 泳池休 / 落雨 → 改 teamLab/Canal City（同 D3 對調）",
         {
-          "name": "海之中道海濱公園",
-          "note": "同區大公園，有單車/小動物，親子加碼",
+          "name": "海之中道海濱公園 動物之森",
+          "note": "唔玩水都得：摸小動物、租單車 12km 徑",
           "mapQuery": "海の中道海浜公園"
-        },
-        "落雨 → 改 teamLab/Canal City（同 D3 對調）"
+        }
       ]
     },
     {
@@ -379,24 +375,24 @@
         {
           "time": "11:00",
           "name": "teamLab Forest 福岡（チームラボフォレスト）",
+          "icon": "🌌",
           "note": "BOSS E・ZO 5F（PayPay Dome 旁），沉浸式光影互動，夏季限定作品；建議網上預約",
           "duration": "1.5–2h",
           "cost": "16歲+ ¥2,400・4–15歲 ¥1,000・3歲下免費",
           "transport": "巴士 PayPayドーム前",
           "mustDo": "夏季限定光影森林、Soft Terrain 互動",
-          "imageUrl": "",
           "mapQuery": "チームラボフォレスト 福岡",
           "transfer": "同棟・步行"
         },
         {
           "time": "13:30",
-          "name": "BOSS E・ZO FUKUOKA",
-          "note": "同棟：VR 樂園、絕望滑梯、teamLab，雨天一站玩足；設施分別收費",
+          "name": "BOSS E・ZO FUKUOKA（從頂樓玩到地下）",
+          "icon": "🎢",
+          "note": "同棟：VR 樂園、絕望滑梯、屋頂活動，雨天一站玩足；設施分別收費",
           "duration": "半日",
           "cost": "各設施分別收費",
           "transport": "步行",
-          "mustDo": "100 碼滑梯、VR、屋頂活動",
-          "imageUrl": "",
+          "mustDo": "頂樓絕望滑梯/吊橋、VR、teamLab 同棟",
           "mapQuery": "BOSS E・ZO FUKUOKA",
           "transfer": "地鐵/巴士回市區・約 15 分"
         },
@@ -421,7 +417,7 @@
         },
         {
           "name": "天神地下街",
-          "note": "長地下購物街，落雨完全唔使出地面",
+          "note": "長地下購物街，落雨完全唔使出地面；2026 屆 50 週年新店陸續開",
           "mapQuery": "天神地下街"
         }
       ]
@@ -429,7 +425,51 @@
     {
       "date": "8/25",
       "weekday": "週二",
-      "theme": "近郊一：太宰府天滿宮 + 柳川遊船（西鐵套票一日）",
+      "theme": "KidZania 福岡 + LaLaport 實物大 νGundam（同一棟）",
+      "weather": {
+        "icon": "cloudy",
+        "high": 32,
+        "low": 26
+      },
+      "activities": [
+        {
+          "time": "09:00",
+          "name": "KidZania 福岡（キッザニア福岡・職業體驗）",
+          "icon": "🎒",
+          "note": "ららぽーと福岡 4F；70+ 種職業體驗，8 歲黃金年齡全程做主角。★ 8 月飛約 6/2 開賣即搶（2 部制），博多巴士 44/45 約 20 分直達",
+          "duration": "第1部 9:00–14:30",
+          "cost": "假日小學生約 ¥4,300–5,300・大人約 ¥2,400（未核實當日）",
+          "transport": "巴士 ららぽーと福岡 / JR 竹下駅",
+          "mustDo": "開場即攞籌玩熱門職業（壽司/消防/披薩）；揀動作型職業（日語門檻低）",
+          "mapQuery": "キッザニア福岡",
+          "transfer": "同棟商場・步行（午餐+逛 LaLaport）"
+        },
+        {
+          "time": "15:00",
+          "name": "LaLaport 福岡・GUNDAM SIDE-F（實物大 νGundam）",
+          "icon": "🤖",
+          "note": "全球最高實物大高達『RX-93ff νガンダム』約 24.8m，免費觀賞；商場美食+親子店",
+          "duration": "2–3h",
+          "cost": "免費（商品另計）",
+          "transport": "同棟",
+          "mustDo": "★ 夜間映像演出 19:00–21:00 燈效最靚（日間每正點起動），SIDE-F 限定扭蛋",
+          "mapQuery": "ららぽーと福岡",
+          "transfer": "巴士 44/45 返博多/天神・約 20 分"
+        }
+      ],
+      "backup": [
+        "KidZania 訂第2部（15:30–20:00）→ 上午改太宰府/市區",
+        {
+          "name": "ボーネルンド / 商場親子設施",
+          "note": "LaLaport 內室內遊樂，落雨同棟搞掂",
+          "mapQuery": "ららぽーと福岡"
+        }
+      ]
+    },
+    {
+      "date": "8/26",
+      "weekday": "週三",
+      "theme": "近郊一：太宰府天滿宮 +（optional）柳川遊船",
       "weather": {
         "icon": "showers",
         "high": 33,
@@ -439,7 +479,7 @@
         {
           "time": "09:30",
           "name": "太宰府天滿宮（太宰府天満宮）",
-          "note": "起點：天神搭西鐵約 45 分。學問之神，參道梅枝餅必食，最經典近郊半日；買西鐵『太宰府・柳川套票』一日串",
+          "note": "起點：天神西鐵約 45 分。學問之神，參道梅枝餅必食；買西鐵『太宰府・柳川套票』一日串",
           "duration": "半日",
           "cost": "免費（西鐵套票 大人 ¥3,210・小童 ¥1,610 含柳川船）",
           "transport": "西鐵天神大牟田線+太宰府線",
@@ -454,7 +494,7 @@
             "name": "かさの家（太宰府參道・梅ヶ枝餅）",
             "cuisine": "和菓子・名物",
             "perPerson": "¥200–1,000",
-            "recommended": "現烤梅ヶ枝餅 ¥130/個、堂食烏冬/善哉；1922 年老舖，邊行邊食或堂食",
+            "recommended": "現烤梅ヶ枝餅 ¥130/個、堂食烏冬/善哉；1922 年老舖",
             "location": "太宰府參道",
             "mapQuery": "かさの家 太宰府 参道",
             "menuLink": "https://tabelog.com/en/fukuoka/A4003/A400301/40006129/"
@@ -462,8 +502,9 @@
         },
         {
           "time": "14:30",
-          "name": "柳川遊船（柳川川下り）",
-          "note": "護城河搖櫓船約 70–90 分，慢遊消暑經典；颱風/暴雨停航",
+          "name": "柳川遊船（柳川川下り）※ optional・睇天氣",
+          "icon": "🛶",
+          "note": "九州威尼斯水鄉搖船約 70–90 分，慢遊消暑；★ 颱風/暴雨停航，唔得就純太宰府慢遊",
           "duration": "2h",
           "cost": "大人約 ¥1,700–2,000・小童約 ¥850（套票已含）",
           "transport": "西鐵柳川站步行",
@@ -474,66 +515,12 @@
         }
       ],
       "backup": [
-        "颱風/暴雨 → 柳川船停航，改九州國立博物館（太宰府旁室內）+ 順延柳川",
+        "柳川停航/太攰 → 跳柳川，太宰府慢遊 + 九州國立博物館（室內）",
         {
           "name": "九州國立博物館",
-          "note": "大型國立博物館，太宰府旁，雨天 backup",
+          "note": "太宰府旁大型國立博物館，雨天 backup",
           "mapQuery": "九州国立博物館"
         }
-      ]
-    },
-    {
-      "date": "8/26",
-      "weekday": "週三",
-      "theme": "市區慢遊：大濠公園・櫛田神社・中洲屋台（最 chill）",
-      "weather": {
-        "icon": "partly",
-        "high": 32,
-        "low": 26
-      },
-      "activities": [
-        {
-          "time": "10:00",
-          "name": "大濠公園（大濠公園）",
-          "note": "大湖公園散步、踩天鵝船、超 chill；正午前較涼",
-          "duration": "1.5–2h",
-          "cost": "免費（船另計）",
-          "transport": "地下鐵大濠公園站",
-          "mustDo": "湖畔散步、踩天鵝船、福岡城跡",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/%E5%A4%A7%E6%BF%A0%E5%85%AC%E5%9C%92_%283360365578%29.jpg",
-          "mapQuery": "大濠公園",
-          "transfer": "地下鐵→中洲川端/祇園・約 8 分"
-        },
-        {
-          "time": "13:00",
-          "name": "櫛田神社（櫛田神社）",
-          "note": "博多總鎮守、山笠祭主場，市區易到；可順遊博多町家",
-          "duration": "45分",
-          "cost": "免費",
-          "transport": "地下鐵祇園站",
-          "mustDo": "山笠飾り山、博多祇園太鼓",
-          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Kushidajinjafukuoka01.jpg",
-          "mapQuery": "櫛田神社 福岡"
-        },
-        {
-          "time": "18:30",
-          "name": "中洲屋台街（夜食）",
-          "note": "那珂川河畔屋台一字排開，霓虹倒影超有氣氛；帶女童早場去、現金為主、落雨會休",
-          "duration": "2h",
-          "cost": "每檔約 ¥1,500–3,000/人",
-          "transport": "地下鐵中洲川端站",
-          "mustDo": "屋台拉麵/燒鳥/天婦羅 hopping、河畔夜景",
-          "imageUrl": "",
-          "mapQuery": "中洲 屋台街 福岡"
-        }
-      ],
-      "backup": [
-        {
-          "name": "水たき長野 / 博多華味鳥（想食一餐正）",
-          "note": "百年水炊き老舖/料亭雞白湯鍋，和座個室、雞湯清甜啱 8 歲女；務必預約",
-          "mapQuery": "博多名代 水たき長野 対馬小路"
-        },
-        "落雨 → 屋台休，改室內拉麵店/もつ鍋"
       ]
     },
     {
@@ -556,12 +543,12 @@
           "transport": "JR 特急ゆふいんの森",
           "mustDo": "搶到指定席、車上 buffet、影綠色列車",
           "mapQuery": "由布院駅",
-          "transfer": "由布院站步行/觀光馬車入小鎮"
+          "transfer": "由布院站步行入小鎮"
         },
         {
           "time": "11:45",
           "name": "由布院（湯布院）金鱗湖 + 湯之坪街道",
-          "note": "溫泉文青小鎮，金鱗湖晨霧、湯之坪街道小店掃街；可浸足湯",
+          "note": "溫泉文青小鎮，金鱗湖晨霧、湯之坪街道掃街；可浸足湯",
           "duration": "半日",
           "cost": "街區免費（足湯/館另計）",
           "transport": "步行",
@@ -588,44 +575,60 @@
     {
       "date": "8/28",
       "weekday": "週五",
-      "theme": "購物手信 + Disney on Ice（女童啱）",
+      "theme": "市區慢遊：大濠公園・福岡塔・中洲屋台（＋ Disney on Ice 夜）",
       "weather": {
-        "icon": "cloudy",
+        "icon": "partly",
         "high": 32,
         "low": 26
       },
       "activities": [
         {
-          "time": "10:30",
-          "name": "天神／博多站購物・掃手信",
-          "note": "天神地下街/PARCO/大丸，或博多 AMU Plaza；買通りもん、明太子、梅枝餅",
-          "duration": "半日",
-          "cost": "視消費",
-          "transport": "地下鐵",
-          "mustDo": "博多通りもん、ふくや明太子、太宰府梅枝餅手信",
-          "imageUrl": "",
-          "mapQuery": "アミュプラザ博多",
-          "transfer": "地鐵/巴士去マリンメッセ（呉服町站步行或博多站巴士）"
+          "time": "10:00",
+          "name": "大濠公園（大濠公園）",
+          "note": "大湖公園散步、踩天鵝船、超 chill；正午前較涼，順遊福岡城跡/櫛田神社",
+          "duration": "2h",
+          "cost": "免費（船另計）",
+          "transport": "地下鐵大濠公園站",
+          "mustDo": "湖畔散步、踩天鵝船、福岡城跡",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/%E5%A4%A7%E6%BF%A0%E5%85%AC%E5%9C%92_%283360365578%29.jpg",
+          "mapQuery": "大濠公園",
+          "transfer": "地鐵到百道・約 15 分（或巴士）"
         },
         {
-          "time": "17:00",
-          "name": "Disney on Ice『LET'S PARTY!』40 週年",
-          "note": "★ 8/28–29 マリンメッセ福岡 A館，迪士尼冰上歌舞 40 週年，女童首選；必購票對號入座（e+/Lawson Ticket）",
+          "time": "16:30",
+          "name": "福岡塔（福岡タワー）黃昏夜景",
+          "note": "234m 海濱塔，黃昏上展望台睇日落轉夜景，海濱百道散步",
+          "duration": "1.5h",
+          "cost": "大人 ¥800・中小學 ¥500・4歲+ ¥200",
+          "transport": "巴士百道",
+          "mustDo": "黃昏夜景、海濱百道沙灘",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Fukuoka_Tower_Before_Sunset.jpg",
+          "mapQuery": "福岡タワー",
+          "transfer": "巴士/地鐵到中洲川端・約 20 分"
+        },
+        {
+          "time": "18:30",
+          "name": "中洲屋台街（夜食）",
+          "icon": "🏮",
+          "note": "那珂川河畔屋台一字排開，霓虹倒影超有氣氛；帶女童早場去、現金為主、落雨會休",
           "duration": "2h",
-          "cost": "購票（待官方場次/票價確認）",
-          "transport": "地下鐵呉服町站步行 / 博多站巴士",
-          "mustDo": "迪士尼角色冰上演出",
-          "imageUrl": "",
-          "mapQuery": "マリンメッセ福岡 A館"
+          "cost": "每檔約 ¥1,500–3,000/人",
+          "transport": "地下鐵中洲川端站",
+          "mustDo": "屋台拉麵/燒鳥/天婦羅 hopping、河畔夜景",
+          "mapQuery": "中洲 屋台街 福岡"
         }
       ],
       "backup": [
         {
-          "name": "博多鉄なべ 無限餃子（親子晚餐）",
-          "note": "官方標榜親子友善、梳化大位、一口餃易食，最啱 8 歲女",
-          "mapQuery": "博多鉄なべ 無限餃子 博多駅"
+          "name": "Disney on Ice『LET'S PARTY!』40 週年（夜・optional）",
+          "note": "★ 8/28–29 マリンメッセ福岡 A館；女童首選，必購票（e+/Lawson）→ 想睇就改晚上去，屋台順延",
+          "mapQuery": "マリンメッセ福岡 A館"
         },
-        "唔睇 Disney on Ice → 補大濠/福岡塔未玩的，或 Marinoa Outlet"
+        {
+          "name": "糸島 櫻井二見浦（optional・睇天氣）",
+          "note": "九州版夏威夷純白海中鳥居；景點散落要租車，晴天先值得，當整日替換",
+          "mapQuery": "糸島 二見ヶ浦"
+        }
       ]
     },
     {
@@ -646,8 +649,7 @@
           "duration": "1.5h",
           "cost": "視消費",
           "transport": "步行",
-          "mustDo": "デイトス/マイング 補手信、KITTE 食堂街午餐",
-          "imageUrl": "",
+          "mustDo": "博多通りもん、ふくや明太子、太宰府梅枝餅；KITTE 食堂街午餐",
           "mapQuery": "アミュプラザ博多",
           "transfer": "地下鐵空港線 博多→福岡機場 5 分・¥260"
         },
@@ -682,6 +684,33 @@
       "mapQuery": "マリンメッセ福岡 A館"
     },
     {
+      "name": "夜の水族館 2026（Marine World）",
+      "date": "8/22–23 等週末・到 21:00",
+      "where": "海洋世界海之中道（JR 海ノ中道駅）",
+      "tag": "✅✅ 親子・限定",
+      "note": "夏季夜場開到 21:00（最終入館 20:00），18:00 起夜間燈光；同日玩埋泳池/公園（待官方確認確切日）",
+      "link": "https://marine-world.jp/",
+      "mapQuery": "マリンワールド海の中道"
+    },
+    {
+      "name": "夜の動植物園（Night Zoo）",
+      "date": "暑期週六夜場（8/22・8/29 大機率）",
+      "where": "福岡市動植物園（藥院大通/櫻坂）",
+      "tag": "✅ 親子・限定",
+      "note": "夜行動物、夜開花、溫室燈光、Live Painting（2026 確切日待官方）",
+      "link": "https://zoo.city.fukuoka.lg.jp/",
+      "mapQuery": "福岡市動植物園"
+    },
+    {
+      "name": "νGUNDAM 起動・夜間映像",
+      "date": "每日・夜場 19:00–21:00",
+      "where": "LaLaport 福岡 GUNDAM SIDE-F（JR 竹下駅）",
+      "tag": "✅ 親子・免費打卡",
+      "note": "實物大 24.8m νGundam，日間每正點起動、夜間牆面映像最靚",
+      "link": "https://mitsui-shopping-park.com/lalaport/fukuoka/event/2718166.html",
+      "mapQuery": "ららぽーと福岡"
+    },
+    {
       "name": "天神夏まつり × 鷹祭",
       "date": "7/17–8/23（你 8/22–23 兩晚趕得切）",
       "where": "福岡市役所西側ふれあい廣場（天神站）",
@@ -709,20 +738,29 @@
       "mapQuery": "志井公園 北九州"
     },
     {
-      "name": "teamLab Forest 夏季限定作品",
-      "date": "7/15 起・覆蓋全程",
-      "where": "BOSS E・ZO 5F（PayPay Dome 旁）",
-      "tag": "✅✅ 雨天備案",
-      "note": "夏季限定向日葵等光影；建議網上預約購票",
-      "link": "https://www.teamlab.art/e/forest/",
-      "mapQuery": "チームラボフォレスト 福岡"
+      "name": "屋頂啤酒花園（多間酒店天台）",
+      "date": "6/1–8/31・覆蓋全程",
+      "where": "福岡市中心多間酒店天台",
+      "tag": "◯ 早場可帶細路",
+      "note": "夏夜啤酒花園，部分有兒童餐；偏成人場早場去",
+      "link": "https://www.crossroadfukuoka.jp/feature/beer",
+      "mapQuery": "福岡 ビアガーデン"
+    },
+    {
+      "name": "ONE FUKUOKA BLDG.（2025/4 新開）",
+      "date": "常設新地標",
+      "where": "天神（地下鐵天神站）",
+      "tag": "🆕 雨天備案",
+      "note": "B2–5F 商場餐飲、MoMA Design Store 九州首間、REC Coffee；新淨好行",
+      "link": "https://onefukuoka-building.jp/",
+      "mapQuery": "ONE FUKUOKA BLDG 天神"
     },
     {
       "name": "關門海峽花火大會",
       "date": "8/13",
       "where": "門司區西海岸",
       "tag": "❌ 早過你到埗",
-      "note": "2026 約 8/13、18,000 發；你 8/22 先到，趕唔切（門司側日期出發前再確認）",
+      "note": "2026 約 8/13、18,000 發；你 8/22 先到趕唔切（門司側日期出發前再確認）",
       "link": "https://hanabi.walkerplus.com/detail/ar1040e00932/",
       "mapQuery": "関門海峡花火大会"
     }
@@ -738,6 +776,7 @@
           "hours": "24 小時（全年無休）",
           "intro": "一蘭發源地總本店，獨立『味集中』隔板座，遊客必朝聖。Tabelog 3.45。",
           "signature": "天然とんこつラーメン ¥980、替玉 ¥210、半熟卵 ¥140",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/Tonkotsu_ramen.JPG",
           "mapQuery": "一蘭 総本店 中洲 福岡",
           "link": "https://tabelog.com/en/fukuoka/A4001/A400102/40000130/"
         },
@@ -748,6 +787,7 @@
           "hours": "11:00–22:00（每日）",
           "intro": "一風堂發源本店，只此一間賣元祖白丸/赤丸原版。Tabelog 3.22。",
           "signature": "元祖白丸元味 ¥850、赤丸新味 ¥950",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/Tonkotsu_ramen.JPG",
           "mapQuery": "博多 一風堂 大名本店",
           "link": "https://tabelog.com/en/fukuoka/A4001/A400103/40025391/"
         },
@@ -758,6 +798,7 @@
           "hours": "約 11:00–翌3:00（分店各異）；不定休",
           "intro": "屋台出身、本地人最愛『博多純情らーめん』，細麵掛湯、叉燒入口即化；博多駅店最方便帶細路。",
           "signature": "ラーメン ¥750、替玉、餃子、炒飯",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/Tonkotsu_ramen.JPG",
           "mapQuery": "博多らーめん ShinShin 天神本店",
           "link": "https://www.hakata-shinshin.com/"
         },
@@ -768,6 +809,7 @@
           "hours": "約 11:00–24:00（不定休，先查）",
           "intro": "近年最紅『泡系豚骨』（湯面泡沫綿密如卡布奇諾），遊客排隊店，近博多駅。",
           "signature": "博多新風ラーメン ¥850、替玉 ¥150",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/Tonkotsu_ramen.JPG",
           "mapQuery": "博多一双 博多駅東店"
         }
       ]
@@ -782,6 +824,7 @@
           "hours": "16:00–23:00；定休 12/31、1/1",
           "intro": "福岡もつ鍋代表，全店掘りごたつ個室，鮮甜味噌湯底招牌。",
           "signature": "みそ/しょうゆもつ鍋 ¥2,178/人、ちゃんぽん締め",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Motsunabe.jpg",
           "mapQuery": "博多もつ鍋 おおやま 本店 店屋町",
           "link": "https://www.motu-ooyama.com/en/"
         },
@@ -792,6 +835,7 @@
           "hours": "約 17:00–24:00（不定休）",
           "intro": "與おおやま齊名兩大派之一，濃厚白湯/味噌、內臟新鮮。",
           "signature": "もつ鍋（味噌/醤油/水炊き風）¥2,000–2,400/人、明太子料理",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Motsunabe.jpg",
           "mapQuery": "博多もつ鍋 前田屋 総本店",
           "link": "https://motsunabe-maedaya.com/"
         },
@@ -802,6 +846,7 @@
           "hours": "月–六 12:00–22:00；★週日定休（建議預約）",
           "intro": "百年水炊き老舖，每日熬鮮雞骨白濁湯；料亭和座，雞肉清淡，最啱一家人慢食、8歲女啱。",
           "signature": "骨付肉コース、ミンチ（去骨啱細路）、雞湯",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Motsunabe.jpg",
           "mapQuery": "博多名代 水たき長野 対馬小路",
           "link": "https://mizutakinagano.com/"
         },
@@ -812,6 +857,7 @@
           "hours": "午 11:30–15:00、晚 17:00–23:00；4人以上需3日前預約",
           "intro": "自家雞場『華味鳥』料亭級水炊き，多層個室，私隱好，最啱一家大細圍爐；雞湯清甜小朋友友善。",
           "signature": "水たきコース ¥4,200起、華味鳥つくね、雞湯雜炊",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/61/Motsunabe.jpg",
           "mapQuery": "水たき料亭 博多華味鳥 中洲本店",
           "link": "https://www.hanamidori.net/"
         }
@@ -827,6 +873,7 @@
           "hours": "午 12:00–13:30、晚 17:00–21:30（休お盆/正月）",
           "intro": "『イカ活造り』發祥店，墨魚透明鮮甜即叫即劏。Tabelog 3.67 Very Good。★活イカ數量有限務必預約。",
           "signature": "いか活造り ¥2,420/100g、活造り定食 ¥4,180、九州海鮮",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Ikizukuri.jpg",
           "mapQuery": "河太郎 博多駅店 JRJP博多ビル",
           "link": "https://www.kawataro.jp/hakata/",
           "menuLink": "https://www.kawataro.jp/hakata/menu.html"
@@ -838,6 +885,7 @@
           "hours": "午/晚兩部（不定休，查官網）",
           "intro": "活造り總本店，臨中洲氣氛傳統，活イカ及九州海鮮見稱；要活イカ請預約。",
           "signature": "いか活造り（時價約 ¥2,400/100g）、河太郎御膳（午）",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Ikizukuri.jpg",
           "mapQuery": "河太郎 中洲本店 福岡",
           "link": "https://tabelog.com/en/fukuoka/A4001/A400102/40000013/"
         }
@@ -876,8 +924,9 @@
           "area": "天神/大名",
           "price": "¥2,000–2,800",
           "hours": "約 11:00–（季節限定，先查）",
-          "intro": "あまおう草莓農家直營，招牌『本気のあまおうパフェ』用足 20 粒草莓，女童會超鍾意。（8月草莓非當造，先確認當季）",
+          "intro": "あまおう草莓農家直營，招牌『本気のあまおうパフェ』，女童會超鍾意。（8月草莓非當造，先確認當季）",
           "signature": "あまおうパフェ ¥2,300、草莓系列甜品",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Parfait_samples_by_pinguino_in_Osaka%2C_Japan.jpg",
           "mapQuery": "いちごや cafe TANNAL 福岡大名店",
           "link": "https://www.nishitetsu.jp/nishitetsu_news/entry_type/post-6978/"
         },
@@ -888,6 +937,7 @@
           "hours": "約 8:00–20:00",
           "intro": "隈研吾設計『木組み』榫接外觀，全球最美星巴克之一，遊太宰府順道打卡，細路覺得型。",
           "signature": "季節飲品、福岡限定商品",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Parfait_samples_by_pinguino_in_Osaka%2C_Japan.jpg",
           "mapQuery": "スターバックス 太宰府天満宮表参道店"
         }
       ]
@@ -902,6 +952,7 @@
           "hours": "月火水金 8:00–20:00、土日祝 10:00–20:00",
           "intro": "福岡之光，岩瀬由和 2016 世界咖啡師亞軍；自家烘焙精品豆，天神新地標大樓內。",
           "signature": "手沖單品、拿鐵、自家烘焙豆（手信）",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Latte_and_dark_coffee.jpg",
           "mapQuery": "REC COFFEE 天神ワンビル店",
           "link": "https://rec-coffee.com/en"
         },
@@ -912,6 +963,7 @@
           "hours": "約 10:00–19:00（不定休）",
           "intro": "後藤直紀 2013 世界烘焙冠軍（日本唯一），烘焙界殿堂；買豆/掛耳一流手信。",
           "signature": "單品手沖、冠軍烘焙豆、掛耳包",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Latte_and_dark_coffee.jpg",
           "mapQuery": "豆香洞コーヒー 本店 大野城",
           "link": "https://www.welcomekyushu.jp/article/?mode=detail&id=436"
         }
@@ -927,6 +979,7 @@
           "hours": "約 17:00–24:00（不定休）",
           "intro": "明確標榜親子友善：梳化大位、空間闊落、一口 size 餃子細路一啖一隻，最推薦帶 8 歲女。",
           "signature": "鉄なべ餃子（一口）、串燒、飯/湯",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/%E5%8F%B0%E7%81%A3%E5%8D%97%E6%8A%95%E8%8D%89%E5%B1%AF%E6%B0%B4%E9%A4%83Nantou%2C_Taiwan_Caotun_dumplings.jpg",
           "mapQuery": "博多鉄なべ 無限餃子 博多駅",
           "link": "https://mugengyoza.owst.jp/"
         },
@@ -937,6 +990,7 @@
           "hours": "約 17:00–24:00（不定休）",
           "intro": "博多『鉄なべ餃子』代表，一口大、鐵鍋上枱滋滋作響、皮脆餡多。",
           "signature": "鉄なべ餃子、手羽先",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/%E5%8F%B0%E7%81%A3%E5%8D%97%E6%8A%95%E8%8D%89%E5%B1%AF%E6%B0%B4%E9%A4%83Nantou%2C_Taiwan_Caotun_dumplings.jpg",
           "mapQuery": "博多祇園 鉄なべ"
         },
         {
@@ -961,6 +1015,7 @@
           "hours": "依店",
           "intro": "福岡手信代名詞，連續 19 年 Monde Selection 金獎；白豆沙+煉乳奶香，老少咸宜。",
           "signature": "博多通りもん",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Alaska_pollack_liver_roe_milt.jpg/1280px-Alaska_pollack_liver_roe_milt.jpg",
           "mapQuery": "博多通りもん マイング 博多駅",
           "link": "https://www.meigetsudo.co.jp/"
         },
@@ -971,6 +1026,7 @@
           "hours": "約 10:00–18:30",
           "intro": "日本首創明太子，純鱈魚卵鮮味、辣度可揀；冷藏，最後一日買用保冷。",
           "signature": "味の明太子（各規格）",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Alaska_pollack_liver_roe_milt.jpg/1280px-Alaska_pollack_liver_roe_milt.jpg",
           "mapQuery": "ふくや 博多駅地下街店",
           "link": "https://www.fukuya.com/shop/ekichika/"
         }
@@ -982,12 +1038,28 @@
       "category": "👧 親子・8 歲女童啱玩",
       "items": [
         {
-          "name": "海洋世界海之中道",
-          "area": "海之中道 / JR或船30–40分",
-          "cost": "大人 ¥2,500・3歲+ ¥700",
-          "tag": "女童頭號",
-          "note": "海豚海獅 show，暑假開到 21:00",
-          "mapQuery": "マリンワールド海の中道"
+          "name": "KidZania 福岡（職業體驗）",
+          "area": "ららぽーと福岡 4F",
+          "cost": "假日小學生約 ¥4,300–5,300",
+          "tag": "★ 約6/2搶飛",
+          "note": "70+ 職業體驗，8 歲黃金；2 部制要預約",
+          "mapQuery": "キッザニア福岡"
+        },
+        {
+          "name": "海之中道 サンシャインプール",
+          "area": "海ノ中道駅",
+          "cost": "大人 ¥2,300（WEB ¥2,100）",
+          "tag": "★ 8/28休",
+          "note": "夏季水樂園，8/22–27 連開；WEB 預售平+免排隊",
+          "mapQuery": "海の中道サンシャインプール"
+        },
+        {
+          "name": "BOSS E・ZO FUKUOKA",
+          "area": "PayPay Dome 旁",
+          "cost": "各設施分別收費",
+          "tag": "室內外",
+          "note": "VR、絕望滑梯、teamLab 同棟",
+          "mapQuery": "BOSS E・ZO FUKUOKA"
         },
         {
           "name": "福岡 Anpanman 兒童博物館",
@@ -998,19 +1070,11 @@
           "mapQuery": "福岡アンパンマンこどもミュージアム"
         },
         {
-          "name": "BOSS E・ZO FUKUOKA",
-          "area": "PayPay Dome 旁",
-          "cost": "各設施分別收費",
-          "tag": "室內外樂園",
-          "note": "VR、絕望滑梯、teamLab 同棟",
-          "mapQuery": "BOSS E・ZO FUKUOKA"
-        },
-        {
           "name": "福岡市動植物園",
           "area": "市中心 南公園",
           "cost": "約 ¥600",
-          "tag": "★週一休",
-          "note": "動物+植物，山坡纜車式設施",
+          "tag": "★週一休・夜場",
+          "note": "暑期週六有夜の動植物園",
           "mapQuery": "福岡市動植物園"
         }
       ]
@@ -1027,11 +1091,11 @@
           "mapQuery": "キャナルシティ博多"
         },
         {
-          "name": "天神地下街",
+          "name": "天神地下街 / ONE FUKUOKA",
           "area": "天神",
           "cost": "免費",
           "tag": "避雨購物",
-          "note": "長地下街連通多商場，落雨唔使出地面",
+          "note": "長地下街+2025 新開大樓，落雨唔使出地面",
           "mapQuery": "天神地下街"
         },
         {
@@ -1045,8 +1109,25 @@
       ]
     },
     {
-      "category": "🚆 近郊 1.5 小時（二選一日歸）",
+      "category": "🚆 近郊 / optional（睇時間天氣）",
       "items": [
+        {
+          "name": "糸島 櫻井二見浦",
+          "area": "地鐵+JR/巴士 40–70分",
+          "cost": "免費",
+          "tag": "optional・要租車",
+          "note": "九州版夏威夷，純白海中鳥居+海邊咖啡；景點散落晴天先值得，建議租車",
+          "mapQuery": "糸島 二見ヶ浦"
+        },
+        {
+          "name": "柳川遊船",
+          "area": "西鐵 約50分",
+          "cost": "大人約 ¥1,700–2,000",
+          "tag": "optional・天氣",
+          "note": "九州威尼斯水鄉搖船；颱風/暴雨停航",
+          "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Yanagawa-kawakudari.jpg",
+          "mapQuery": "柳川川下り"
+        },
         {
           "name": "由布院（湯布院）",
           "area": "JR特急 約2h15",
@@ -1057,29 +1138,13 @@
           "mapQuery": "湯布院 金鱗湖"
         },
         {
-          "name": "門司港懷舊",
-          "area": "JR 約1.5h",
-          "cost": "街區免費",
-          "tag": "大正洋風港",
-          "note": "燒咖喱+海邊+小倉城",
-          "mapQuery": "門司港レトロ"
-        },
-        {
-          "name": "熊本城",
-          "area": "新幹線 約40分",
-          "cost": "約 ¥800（未核實）",
-          "tag": "名城・修復中",
-          "note": "特別見學通路近距離睇修復",
+          "name": "門司港懷舊 / 熊本城",
+          "area": "JR 1.5h / 新幹線 40分",
+          "cost": "免費 / 約 ¥800",
+          "tag": "近郊備選",
+          "note": "大正洋風港 / 名城修復中特別見學",
           "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Kumamoto_Castle_Keep_Tower_20221022-3.jpg/1280px-Kumamoto_Castle_Keep_Tower_20221022-3.jpg",
-          "mapQuery": "熊本城"
-        },
-        {
-          "name": "糸島（二見ヶ浦）",
-          "area": "地鐵+JR 40–70分",
-          "cost": "免費",
-          "tag": "海邊咖啡・要租車",
-          "note": "海岸咖啡+夫婦岩；牡蠣小屋 8 月冇，景點散落建議租車",
-          "mapQuery": "糸島 二見ヶ浦"
+          "mapQuery": "門司港レトロ"
         }
       ]
     }
@@ -1146,7 +1211,7 @@
     },
     "transport": {
       "items": [],
-      "subtotal": "市內+近郊（太宰府柳川套票/由布院特急/門司港）≈ ¥66,000（約 HK$3,220）"
+      "subtotal": "市內+近郊（太宰府柳川套票/由布院特急/海之中道）≈ ¥66,000（約 HK$3,220）"
     },
     "food": {
       "items": [],
@@ -1154,7 +1219,7 @@
     },
     "tickets": {
       "items": [],
-      "subtotal": "海洋世界/teamLab/福岡塔/柳川船/由布院 ≈ ¥40,000（約 HK$1,950）"
+      "subtotal": "KidZania/海洋世界/サンシャインプール/teamLab/福岡塔/由布院 ≈ ¥48,000（約 HK$2,340）"
     },
     "other": {
       "items": [],
@@ -1162,7 +1227,7 @@
     },
     "total": "≈ ¥520,000（約 HK$25,370）",
     "perPerson": "≈ HK$6,340",
-    "note": "中等檔（4人7夜・不計機票）。匯率 HK$1≈¥20.5（2026/6 實際，比 ¥19 更抵）。8月暑假 Airbnb 全年最貴，要早訂；由布院之森指定席 1 個月前搶。所有價為 2025–26 公開資料整合，落單前以官方即時價為準；標 未核實/估算 者尤其要自行核對。"
+    "note": "中等檔（4人7夜・不計機票）。匯率 HK$1≈¥20.5（2026/6 實際，比 ¥19 更抵）。8月暑假 Airbnb 全年最貴要早訂；由布院之森指定席 1 個月前搶；KidZania 8 月飛約 6/2 開賣即搶。所有價為 2025–26 公開資料整合，落單前以官方即時價為準；標 未核實/估算 者尤其要自行核對。"
   },
   "essentials": {
     "currency": "日圓 JPY；HK$1 ≈ ¥20.5（出發前查即時匯率）",
@@ -1175,16 +1240,15 @@
     "tipping": "唔使俾小費"
   },
   "tips": [
-    "★ 由布院之森全車指定席：乘車 1 個月前早上 10:00 開賣，暑假秒殺，務必經 JR九州網上會員或 Midori 窗口搶位，唔訂上唔到車。",
-    "★ 颱風季（8–10 月）：近郊日（柳川船/由布院/別府）遇颱風停航停駛；每朝查 JMA 預報，市區室內 backup 充足可同近郊日對調。",
-    "★ 週一 8/24 多設施休館（動植物園等）→ 已排 teamLab/Canal City 室內日避開。",
-    "酷暑 32°C+高濕：戶外排上午/黃昏，正午躲室內（地下街/Canal City/teamLab）；帶電解質、帽、女童注意中暑。",
-    "屋台落雨/荒天休、現金為主、座位少：早場（18–19時）去；名店（華味鳥/水たき長野/河太郎活イカ）出發前網上預約。",
-    "★ Canal City 拉麵 stadium 2025/8 已休業，唔好預設；糸島牡蠣小屋 8 月冇（10–4 月先有），去糸島改海岸/咖啡要租車。",
-    "交通：太宰府+柳川用西鐵套票（大人 ¥3,210 含船）；判斷 3 日內密集 JR 鐵路（由布院+門司港+別府）先買北九州 Pass（大人 ¥15,000），否則逐程買更平。",
-    "退稅：免稅店滿 ¥5,000 可退稅，帶護照；明太子等冷藏品最後一日買用保冷。"
+    "★ KidZania 福岡：8 月飛約 6/2（每月 2 日 10:00 開賣 3 個月後嗰月）即搶，2 部制；體驗日語為主，揀動作型職業（消防/披薩/運轉）細路最 enjoy。",
+    "★ 海之中道 サンシャインプール：8/22–27 連開、★ 8/28(五) 休唔好撞；WEB 預售平 ¥200/人+免排隊；自備泳衣泳帽防曬。",
+    "★ νGundam 夜場 19:00–21:00 燈效最靚（日間每正點起動）；KidZania + LaLaport 同一棟，44/45 巴士一程到。",
+    "★ 由布院之森全車指定席：乘車 1 個月前早上 10:00 開賣，暑假秒殺，必經 JR九州網上會員或 Midori 窗口搶位。",
+    "★ 8/22–23 PayPay Dome 有音樂祭可能撞鷹隊賽 → 唐人町一帶逼爆房價升；嗰兩日去東區（海之中道）反而清靜。",
+    "颱風季（8–10 月）：近郊日（柳川/由布院）遇颱風停航停駛；每朝查 JMA 預報，市區室內 backup 充足可同近郊日對調。8/24 週一多設施休館已排室內日避開。",
+    "酷暑 32°C+高濕：戶外排上午/黃昏，正午躲室內（地下街/Canal City/teamLab）；屋台落雨/荒天休、現金為主、早場去；名店（華味鳥/水たき長野/河太郎活イカ）出發前網上預約。",
+    "交通：太宰府+柳川用西鐵套票（大人 ¥3,210 含船）；判斷 3 日內密集 JR（由布院+門司港+別府）先買北九州 Pass（大人 ¥15,000）。退稅：免稅店滿 ¥5,000，帶護照。糸島牡蠣 8 月冇（10–4 月）。"
   ],
-  "template": "roadbook-washi.html",
   "generationDate": "2026-06-24"
 }
 </script>
@@ -1198,65 +1262,20 @@ function costTag(c){if(c===0)return '<span class="tag free">免費</span>';if(ha
 function wxIcon(k){const m={sunny:'☀️',cloudy:'☁️',rain:'🌧️',showers:'🌦️',snow:'❄️',storm:'⛈️',partly:'⛅',windy:'🌬️',fog:'🌫️'};return m[k]||'🌤️';}
 function mustList(m){return Array.isArray(m)?m.map(E).join('；'):E(m);}
 
-/* ===== 手繪和風 SVG 小插圖 ===== */
-const ILL={
- torii:`<svg viewBox="0 0 64 64"><rect x="5" y="11" width="54" height="6" rx="2.5" fill="#b9381f"/><rect x="9" y="17" width="46" height="5" rx="2" fill="#e04a2f"/><rect x="13" y="22" width="38" height="3.5" rx="1.5" fill="#cf9b34"/><rect x="16" y="22" width="6.5" height="34" rx="1.5" fill="#e04a2f"/><rect x="41.5" y="22" width="6.5" height="34" rx="1.5" fill="#e04a2f"/></svg>`,
- bamboo:`<svg viewBox="0 0 64 64"><g fill="#6f9a3c"><rect x="21" y="6" width="8" height="52" rx="4"/><rect x="36" y="12" width="8" height="46" rx="4"/></g><g stroke="#4f7228" stroke-width="2"><line x1="21" y1="22" x2="29" y2="22"/><line x1="21" y1="38" x2="29" y2="38"/><line x1="36" y1="28" x2="44" y2="28"/><line x1="36" y1="44" x2="44" y2="44"/></g><path d="M29 16c8-2 13 1 16 6-7 1-13-1-16-6z" fill="#8bbf4d"/></svg>`,
- sushi:`<svg viewBox="0 0 64 64"><ellipse cx="32" cy="42" rx="22" ry="12" fill="#fff" stroke="#e3d8c0" stroke-width="2"/><path d="M12 38c8-9 32-9 40 0-6 5-34 5-40 0z" fill="#e8714a"/><g stroke="#f4a07a" stroke-width="2"><line x1="20" y1="35" x2="26" y2="40"/><line x1="34" y1="34" x2="40" y2="39"/></g></svg>`,
- ramen:`<svg viewBox="0 0 64 64"><path d="M12 30h40c0 12-9 20-20 20s-20-8-20-20z" fill="#1f4e8c"/><path d="M12 30h40v-2H12z" fill="#15325f"/><circle cx="26" cy="38" r="5" fill="#f2d06b" stroke="#d9a93b" stroke-width="1.5"/><g stroke="#cf9b34" stroke-width="2.4" stroke-linecap="round"><line x1="40" y1="12" x2="50" y2="30"/><line x1="46" y1="11" x2="54" y2="29"/></g><g stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".8"><path d="M26 20c2 3-2 5 0 8"/><path d="M34 18c2 3-2 5 0 8"/></g></svg>`,
- coffee:`<svg viewBox="0 0 64 64"><path d="M14 26h30v12a13 13 0 0 1-13 13h-4a13 13 0 0 1-13-13z" fill="#fff" stroke="#222634" stroke-width="2.5"/><path d="M44 30h6a6 6 0 0 1 0 12h-6" fill="none" stroke="#222634" stroke-width="2.5"/><ellipse cx="29" cy="54" rx="20" ry="3.5" fill="#cf9b34" opacity=".5"/><g stroke="#e04a2f" stroke-width="2.2" stroke-linecap="round" opacity=".7"><path d="M24 14c2 3-2 5 0 8"/><path d="M33 14c2 3-2 5 0 8"/></g></svg>`,
- onsen:`<svg viewBox="0 0 64 64"><path d="M8 38h48v6a10 10 0 0 1-10 10H18A10 10 0 0 1 8 44z" fill="#5fa8d3"/><path d="M8 38h48v3H8z" fill="#3f8cba"/><g stroke="#e04a2f" stroke-width="2.6" stroke-linecap="round" fill="none"><path d="M22 12c3 4-3 6 0 10"/><path d="M32 9c3 4-3 6 0 10"/><path d="M42 12c3 4-3 6 0 10"/></g></svg>`,
- mountain:`<svg viewBox="0 0 64 64"><circle cx="48" cy="18" r="8" fill="#cf9b34"/><path d="M6 52l16-26 10 14 6-8 20 20z" fill="#6f9a3c"/><path d="M22 26l5 8-9 0z" fill="#fff"/><path d="M44 32l4 4-9 4z" fill="#fff"/></svg>`,
- train:`<svg viewBox="0 0 64 64"><rect x="14" y="10" width="36" height="40" rx="9" fill="#2f7d4f" stroke="#1f5836" stroke-width="2.5"/><rect x="19" y="16" width="26" height="12" rx="4" fill="#dff3e6"/><circle cx="24" cy="38" r="3.5" fill="#f2d06b"/><circle cx="40" cy="38" r="3.5" fill="#f2d06b"/><line x1="20" y1="56" x2="14" y2="62" stroke="#222634" stroke-width="2.5" stroke-linecap="round"/><line x1="44" y1="56" x2="50" y2="62" stroke="#222634" stroke-width="2.5" stroke-linecap="round"/></svg>`,
- plane:`<svg viewBox="0 0 64 64"><path d="M52 12c3 3 2 6-2 9L36 30l3 18-4 3-8-15-9 6 1 6-4 2-3-8-8-3 2-4 6 1 6-9-15-8 3-4 18 3 12-13c3-4 6-5 9-2z" fill="#1f4e8c"/></svg>`,
- shopping:`<svg viewBox="0 0 64 64"><path d="M16 22h32l-3 32H19z" fill="#cf9b34" stroke="#8a6410" stroke-width="2.5"/><path d="M24 22c0-7 3-11 8-11s8 4 8 11" fill="none" stroke="#222634" stroke-width="2.5"/><circle cx="26" cy="36" r="2.5" fill="#e04a2f"/><circle cx="38" cy="36" r="2.5" fill="#e04a2f"/></svg>`,
- fireworks:`<svg viewBox="0 0 64 64"><g stroke-width="2.4" stroke-linecap="round" fill="none"><g stroke="#e04a2f"><line x1="32" y1="32" x2="32" y2="8"/><line x1="32" y1="32" x2="32" y2="56"/><line x1="32" y1="32" x2="8" y2="32"/><line x1="32" y1="32" x2="56" y2="32"/></g><g stroke="#1f4e8c"><line x1="32" y1="32" x2="16" y2="16"/><line x1="32" y1="32" x2="48" y2="48"/><line x1="32" y1="32" x2="16" y2="48"/><line x1="32" y1="32" x2="48" y2="16"/></g></g><g fill="#cf9b34"><circle cx="32" cy="8" r="2.6"/><circle cx="8" cy="32" r="2.6"/><circle cx="56" cy="32" r="2.6"/><circle cx="32" cy="56" r="2.6"/><circle cx="16" cy="16" r="2.4"/><circle cx="48" cy="48" r="2.4"/><circle cx="16" cy="48" r="2.4"/><circle cx="48" cy="16" r="2.4"/></g></svg>`,
- fish:`<svg viewBox="0 0 64 64"><path d="M40 32c0-9-9-15-18-15-7 0-13 4-15 9 4 2 4 10 0 12 2 5 8 9 15 9 9 0 18-6 18-15z" fill="#e04a2f"/><path d="M40 32l16-12c2 8 2 16 0 24z" fill="#f4a07a"/><circle cx="18" cy="29" r="2.6" fill="#222634"/></svg>`,
- castle:`<svg viewBox="0 0 64 64"><path d="M14 50h36v6H14z" fill="#3a3f4d"/><path d="M10 40h44l-6 10H16z" fill="#fff" stroke="#222634" stroke-width="2"/><path d="M18 30h28l-5 10H23z" fill="#dfe6ef" stroke="#222634" stroke-width="2"/><path d="M22 22h20l-4 8H26z" fill="#fff" stroke="#222634" stroke-width="2"/><path d="M30 14h4v8h-4z" fill="#cf9b34"/></svg>`,
- tower:`<svg viewBox="0 0 64 64"><path d="M32 6l8 50H24z" fill="#1f4e8c"/><path d="M32 6l8 50H24z" fill="none" stroke="#15325f" stroke-width="1.5"/><g stroke="#9bc0e6" stroke-width="2"><line x1="27" y1="22" x2="37" y2="22"/><line x1="25" y1="36" x2="39" y2="36"/></g><circle cx="32" cy="6" r="3" fill="#e04a2f"/></svg>`,
- park:`<svg viewBox="0 0 64 64"><path d="M6 46h52v8a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z" fill="#5fa8d3"/><circle cx="24" cy="28" r="14" fill="#6f9a3c"/><circle cx="24" cy="28" r="14" fill="none" stroke="#4f7228" stroke-width="1.5"/><rect x="22" y="36" width="4" height="12" fill="#8a6410"/></svg>`,
- house:`<svg viewBox="0 0 64 64"><path d="M10 30L32 12l22 18z" fill="#e04a2f" stroke="#b9381f" stroke-width="2"/><rect x="16" y="30" width="32" height="24" rx="2" fill="#fff" stroke="#222634" stroke-width="2.5"/><g stroke="#1f4e8c" stroke-width="2.4"><line x1="20" y1="36" x2="44" y2="36"/></g><rect x="28" y="42" width="8" height="12" fill="#cf9b34"/></svg>`,
- lantern:`<svg viewBox="0 0 64 64"><rect x="29" y="6" width="6" height="6" fill="#8a6410"/><ellipse cx="32" cy="34" rx="16" ry="22" fill="#e04a2f" stroke="#b9381f" stroke-width="2"/><g stroke="#fff" stroke-width="2" opacity=".85"><line x1="18" y1="26" x2="46" y2="26"/><line x1="16" y1="34" x2="48" y2="34"/><line x1="18" y1="42" x2="46" y2="42"/></g><rect x="26" y="54" width="12" height="5" fill="#8a6410"/></svg>`,
- stamp:`<svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="24" fill="none" stroke="#e04a2f" stroke-width="3.5"/><text x="32" y="40" font-size="22" text-anchor="middle" fill="#e04a2f" font-weight="900">旅</text></svg>`
-};
-const ILL_RULES=[
- [/中洲|屋台|夜市|提灯/,'lantern'],
- [/神社|天滿|天満|櫛田|神宮|参道|参拜/,'torii'],
- [/teamLab|チームラボ|森|Forest|E・ZO|EZO/,'bamboo'],
- [/拉麵|ラーメン|もつ鍋|餃子|ShinShin|一蘭|一風堂|水たき|華味鳥|鍋/,'ramen'],
- [/海鮮|壽司|寿司|河太郎|活造|市場|魚|海洋世界|マリンワールド|水族/,'fish'],
- [/咖啡|café|cafe|カフェ|星巴克|スターバックス|REC|豆香洞|喫茶/,'coffee'],
- [/溫泉|温泉|別府|地獄|足湯/,'onsen'],
- [/由布院|湯布院|金鱗湖|山/,'mountain'],
- [/列車|JR|特急|之森|の森/,'train'],
- [/機場|空港|Airport|✈/,'plane'],
- [/購物|手信|土産|AMU|Canal|キャナル|Outlet|マリノア|百貨|地下街|夢時代|血拼|採購/,'shopping'],
- [/花火|夏祭|祭|まつり|Disney|演唱|ライブ|市集/,'fireworks'],
- [/城|castle|熊本|門司港|レトロ/,'castle'],
- [/塔|タワー|Tower/,'tower'],
- [/公園|大濠|park|植物園|百道/,'park'],
- [/Check-in|Airbnb|酒店|民泊|ホテル|宿/,'house']
-];
-function illKey(a){const s=(a.name||'')+' '+(a.icon||'');for(const[re,k]of ILL_RULES){if(re.test(s))return k;}return 'stamp';}
-const ILL_CAP={torii:'⛩ 神社',bamboo:'🎋 森の中',sushi:'🍣 美食',ramen:'🍜 麵物',coffee:'☕ 咖啡',onsen:'♨ 溫泉',mountain:'⛰ 山と湖',train:'🚃 列車',plane:'✈ 空の旅',shopping:'🛍 購物',fireworks:'🎆 祭典',fish:'🐟 海の生き物',castle:'🏯 名所',tower:'🗼 展望',park:'🌳 公園',house:'🏠 宿',lantern:'🏮 夜の街',stamp:'❖ 行程'};
-
 function render(){
   let h='';
-  const torii=`<svg class="mark" viewBox="0 0 64 64"><circle cx="32" cy="30" r="20" fill="#e8552d" opacity=".95"/><rect x="6" y="14" width="52" height="6" rx="2.5" fill="#fff"/><rect x="10" y="20" width="44" height="5" rx="2" fill="#ffd98a"/><rect x="17" y="24" width="6.5" height="30" rx="1.5" fill="#fff"/><rect x="40.5" y="24" width="6.5" height="30" rx="1.5" fill="#fff"/></svg>`;
-  const hero=has(T.heroImage)?`<div class="hero"><img src="${E(T.heroImage)}" alt=""><div class="cap">★ ${E(T.dateRange||'')} ★</div></div>`:'';
-  h+=`<div class="cover"><div class="seig"></div><div class="inner">
-    <div class="logo">${torii}<div class="wm">福岡の旅<b>FUKUOKA TRIP</b></div></div>
+  const hero=has(T.heroImage)?`<div class="hero" style="background-image:url('${E(T.heroImage)}')"></div>`:'';
+  h+=`<div class="cover">${hero}<div class="veil"></div><div class="ct">
     ${has(T.kicker)?`<div class="kicker">${E(T.kicker)}</div>`:''}
     <h1>${E(T.title)}</h1>
     ${has(T.subtitle)?`<div class="sub">${E(T.subtitle)}</div>`:''}
+    <div class="deco">🏖️ ✈️ 🌴 🍧 📸 🗺️ 🌈</div>
     <div class="meta">
       ${has(T.dateRange)?`<span class="chip">📅 ${E(T.dateRange)}</span>`:''}
       ${has(T.travelers)?`<span class="chip">👥 ${E(T.travelers)}</span>`:''}
-      ${has(T.days)?`<span class="chip">🗓 ${T.days.length} 天</span>`:''}
-      ${has(T.budget&&T.budget.perPerson)?`<span class="chip">💴 人均 ${E(T.budget.perPerson)}</span>`:''}
-    </div>
-    ${hero}
-  </div></div>`;
+      ${has(T.days)?`<span class="chip">🗓️ ${T.days.length} 天</span>`:''}
+      ${has(T.budget&&T.budget.perPerson)?`<span class="chip">💰 人均 ${E(T.budget.perPerson)}</span>`:''}
+    </div></div></div>`;
 
   if(has(T.days)&&T.days.length){
     h+='<div class="nav"><div class="scroller" id="dnav"><button data-go="top" class="active">總覽</button>';
@@ -1271,26 +1290,26 @@ function render(){
   }
 
   if(has(T.highlights)&&T.highlights.length){
-    h+=`<section id="top"><div class="sec-title"><span class="stamp">✦</span>行程亮點</div><div class="card tab"><ul class="jp">`;
+    h+=`<section id="top"><div class="sec-title"><span class="i">✨</span>行程亮點</div><div class="card"><ul class="tips">`;
     h+=T.highlights.map(x=>`<li>${E(x)}</li>`).join('')+'</ul></div></section>';
   }
 
   if(has(T.weather)){const w=T.weather;
-    h+=`<section><div class="sec-title"><span class="stamp">天</span>天氣 & 穿搭</div><div class="card">
+    h+=`<section><div class="sec-title"><span class="i">🌤️</span>天氣 & 穿搭</div><div class="card">
       <div>${E(w.summary)||''}</div>
-      <div class="tags" style="margin-top:10px">
+      <div class="tags" style="margin-top:9px">
         ${has(w.avgHigh)?`<span class="tag">高 ${E(w.avgHigh)}°</span>`:''}
         ${has(w.avgLow)?`<span class="tag">低 ${E(w.avgLow)}°</span>`:''}
         ${has(w.rainfall)?`<span class="tag">降雨 ${E(w.rainfall)}</span>`:''}
       </div>
-      ${has(w.clothing)?`<div class="small muted" style="margin-top:10px">👕 ${E(w.clothing)}</div>`:''}
+      ${has(w.clothing)?`<div class="small muted" style="margin-top:9px">👕 ${E(w.clothing)}</div>`:''}
       ${has(w.tips)?`<div class="small muted" style="margin-top:4px">💡 ${E(w.tips)}</div>`:''}
     </div></section>`;
   }
 
   if(has(T.events)&&T.events.length){
-    h+=`<section id="events"><div class="sec-title"><span class="stamp">祭</span>期間限定活動</div>`;
-    h+=`<div class="card"><div class="small muted">出發前 2–3 週多數新活動先公布，臨近再更新；日期/地點以官方為準（標 待確認）。</div></div>`;
+    h+=`<section id="events"><div class="sec-title"><span class="i">🎉</span>期間限定活動（旅程期間）</div>`;
+    h+=`<div class="card"><div class="small muted">出發前 2–3 週多數新活動先公布，呢度會喺臨近再更新；日期/地點以官方為準（標 待確認）。</div></div>`;
     T.events.forEach(ev=>{
       h+=`<div class="alt-item"><div class="an">${E(ev.name)}${has(ev.tag)?` <span class="tag">${E(ev.tag)}</span>`:''}</div>
         <div class="ad">${[ev.date,ev.where].filter(has).map(E).join(' · ')}</div>
@@ -1307,18 +1326,17 @@ function render(){
       ${has(d.theme)?`<div class="day-theme">${E(d.theme)}</div>`:''}`;
     (d.activities||[]).forEach(a=>{
       if(a.meal){const m=a.meal;
-        h+=`<div class="act"><div class="time">${E(a.time)||'🍴'}</div><div class="body">
+        h+=`<div class="act"><div class="time">${E(a.time)||'🍽'}</div><div class="body">
           <div class="meal"><div class="mt">🍴 ${E(m.name)}</div>
           <div class="det">${[m.cuisine,has(m.perPerson)?'人均 '+E(m.perPerson):'',m.location].filter(has).map(E).join(' · ')}</div>
-          ${has(m.recommended)?`<div class="small muted" style="margin-top:4px">推薦：${E(m.recommended)}</div>`:''}
+          ${has(m.recommended)?`<div class="small muted" style="margin-top:3px">推薦：${E(m.recommended)}</div>`:''}
           <div class="arow">${mapBtn(m.mapQuery||((m.name||'')+' '+(m.location||'')),'搵餐廳')}${has(m.menuLink)?`<a class="btn-menu" target="_blank" rel="noopener" href="${E(m.menuLink)}">📋 Menu</a>`:''}</div>
           </div>
           ${has(a.transfer)?`<div class="transfer">➡️ 去下一站：${E(a.transfer)}</div>`:''}</div></div>`;
       }else{
-        const k=illKey(a);
-        const vis = has(a.imageUrl)
-          ? `<img class="photo" loading="lazy" src="${E(a.imageUrl)}" alt="">`
-          : `<div class="ill">${ILL[k]}<div class="lbl">${E(a.name)}<b>${ILL_CAP[k]||''}</b></div></div>`;
+        const img = has(a.imageUrl)
+          ? `<img class="thumb" loading="lazy" src="${E(a.imageUrl)}" alt="">`
+          : `<div class="act-ph"><span class="pe">${E(a.icon||'📍')}</span><span>${E(a.name)}</span></div>`;
         h+=`<div class="act"><div class="time">${E(a.time)||'•'}</div><div class="body">
           <div class="nm">${E(a.name)}</div>
           ${has(a.note)?`<div class="det">${E(a.note)}</div>`:''}
@@ -1328,7 +1346,7 @@ function render(){
             ${costTag(a.cost)}
             ${has(a.transport)?`<span class="tag">🚇 ${E(a.transport)}</span>`:''}
           </div>
-          ${vis}
+          ${img}
           ${mapBtn(a.mapQuery||a.address||a.name)}
           ${has(a.transfer)?`<div class="transfer">➡️ 去下一站：${E(a.transfer)}</div>`:''}
         </div></div>`;
@@ -1344,46 +1362,43 @@ function render(){
     h+=`</div></section>`;
   });
 
+  // Dining guide
   if(has(T.dining)&&T.dining.length){
-    h+=`<section id="dining"><div class="sec-title"><span class="stamp">食</span>餐廳指南</div>`;
-    h+=`<div class="card"><div class="small muted">每間有介紹、招牌、營業時間（留意定休日）。<b>📷 Google 相片</b>=睇該店真實相片/評價；📍地圖、🔗介紹、📋Menu。名店出發前要預約。</div></div>`;
+    h+=`<section id="dining"><div class="sec-title"><span class="i">🍴</span>餐廳指南（分類）</div>`;
+    h+=`<div class="card"><div class="small muted">每間有介紹、招牌、營業時間（留意公休）。<b>📷 Google 相片</b> = 一㩒睇該店真實相片同評價；📍地圖導航、🔗介紹、📋Menu。價以現場為準。</div></div>`;
     T.dining.forEach(g=>{
       h+=`<div class="alt-group"><h3>${E(g.category)}</h3>`;
       (g.items||[]).forEach(it=>{
-        const k=illKey({name:(g.category||'')+(it.name||'')});
-        const lead = has(it.imageUrl)?`<img class="photo" loading="lazy" src="${E(it.imageUrl)}" alt="">`:'';
-        h+=`<div class="din-item">${lead}
-          <div class="din-row">${has(it.imageUrl)?'':`<div class="di-ill">${ILL[k]}</div>`}<div style="flex:1;min-width:0">
+        h+=`<div class="din-item">
+          ${has(it.imageUrl)?`<img class="thumb" loading="lazy" src="${E(it.imageUrl)}" alt="">`:''}
           <div class="an">${E(it.name)}</div>
           <div class="ad">${[it.area,it.price,it.hours].filter(has).map(E).join(' · ')}</div>
           ${has(it.intro)?`<div class="anote">${E(it.intro)}</div>`:''}
-          ${has(it.signature)?`<div class="sig">🍱 ${E(it.signature)}</div>`:''}
+          ${has(it.signature)?`<div class="sig">🍽 ${E(it.signature)}</div>`:''}
           <div class="arow">
-            <a class="btn-photo" target="_blank" rel="noopener" href="${mapUrl((it.mapQuery||it.name)+' 福岡')}">📷 Google 相片</a>
+            <a class="btn-photo" target="_blank" rel="noopener" href="${mapUrl((it.mapQuery||it.name)+' 高雄')}">📷 Google 相片</a>
             ${mapBtn(it.mapQuery||it.name,'地圖')}
             ${has(it.link)?`<a class="btn-link" target="_blank" rel="noopener" href="${E(it.link)}">🔗 介紹</a>`:''}
             ${has(it.menuLink)?`<a class="btn-menu" target="_blank" rel="noopener" href="${E(it.menuLink)}">📋 Menu</a>`:''}
-          </div></div></div></div>`;
+          </div></div>`;
       });
       h+=`</div>`;
     });
     h+=`</section>`;
   }
 
+  // Alternatives
   if(has(T.alternatives)&&T.alternatives.length){
-    h+=`<section id="alts"><div class="sec-title"><span class="stamp">選</span>備選活動庫</div>`;
+    h+=`<section id="alts"><div class="sec-title"><span class="i">🔁</span>備選活動庫 — 自由替換</div>`;
     h+=`<div class="card"><div class="small muted">想換／加邊個都得，話我知就改行程重出。所有 📍 都可一㩒導航。</div></div>`;
     T.alternatives.forEach(g=>{
       h+=`<div class="alt-group"><h3>${E(g.category)}</h3>`;
       (g.items||[]).forEach(it=>{
-        const k=illKey(it);
-        h+=`<div class="alt-item">${has(it.imageUrl)?`<img class="photo" loading="lazy" src="${E(it.imageUrl)}" alt="">`:''}
-          <div class="din-row">${has(it.imageUrl)?'':`<div class="di-ill">${ILL[k]}</div>`}<div style="flex:1;min-width:0">
-          <div class="an">${E(it.name)}</div>
+        h+=`<div class="alt-item"><div class="an">${E(it.name)}</div>
           <div class="ad">${[it.area,it.duration,it.hours].filter(has).map(E).join(' · ')}</div>
           ${has(it.note)?`<div class="anote">${E(it.note)}</div>`:''}
           <div class="arow">${costTag(it.cost)}${has(it.tag)?`<span class="tag">${E(it.tag)}</span>`:''}${mapBtn(it.mapQuery||it.name)}</div>
-        </div></div></div>`;
+        </div>`;
       });
       h+=`</div>`;
     });
@@ -1391,20 +1406,22 @@ function render(){
   }
 
   if(has(T.hotels)&&T.hotels.length){
-    h+=`<section id="hotels"><div class="sec-title"><span class="stamp">宿</span>住宿推薦</div>`;
+    h+=`<section id="hotels"><div class="sec-title"><span class="i">🏨</span>住宿推薦</div>`;
     T.hotels.forEach(ht=>{
       h+=`<div class="card hotel"><div class="hn">${E(ht.name)}</div>
         <div class="row"><span class="muted">${E(ht.area)||''}${has(ht.rating)?' · ⭐'+E(ht.rating):''}</span>
         ${has(ht.pricePerNight)?`<span class="price">${E(ht.pricePerNight)}</span>`:''}</div>
-        ${has(ht.highlights)?`<div class="small" style="margin-top:7px">${E(ht.highlights)}</div>`:''}
+        ${has(ht.checkIn)?`<div class="small muted" style="margin-top:4px">入住 ${E(ht.checkIn)}${has(ht.checkOut)?' → 退房 '+E(ht.checkOut):''}</div>`:''}
+        ${has(ht.highlights)?`<div class="small" style="margin-top:6px">${E(ht.highlights)}</div>`:''}
         ${has(ht.confirmation)?`<div class="small muted" style="margin-top:4px">訂單號：${E(ht.confirmation)}</div>`:''}
+        ${has(ht.imageUrl)?`<img class="thumb" loading="lazy" src="${E(ht.imageUrl)}" alt="">`:''}
         ${mapBtn(ht.mapQuery||ht.address||((ht.name||'')+' '+(ht.area||'')))}</div>`;
     });
     h+=`</section>`;
   }
 
-  if(has(T.budget)){const b=T.budget,cats=[['transport','🚄 交通'],['accommodation','🏠 住宿'],['food','🍴 餐飲'],['tickets','🎟 門票'],['other','🛍 其他']];
-    h+=`<section id="budget"><div class="sec-title"><span class="stamp">¥</span>預算</div>`;
+  if(has(T.budget)){const b=T.budget,cats=[['transport','🚄 交通'],['accommodation','🏨 住宿'],['food','🍴 餐飲'],['tickets','🎫 門票'],['other','🛍 其他']];
+    h+=`<section id="budget"><div class="sec-title"><span class="i">💰</span>預算</div>`;
     if(has(b.tiers)&&b.tiers.length){
       h+=`<div class="tiers">`+b.tiers.map(t=>`<div class="tier ${t.pick?'pick':''}"><div class="tl">${E(t.label)}</div><div class="tv">${E(t.total)}</div>${has(t.note)?`<div class="tp">${E(t.note)}</div>`:''}</div>`).join('')+`</div>`;
     }
@@ -1416,18 +1433,18 @@ function render(){
   }
 
   if(has(T.essentials)){const es=T.essentials;
-    const rows=[['currency','💴 貨幣 / 匯率'],['plug','🔌 插頭電壓'],['transit','🚇 交通卡'],['emergency','🚨 緊急電話'],['sim','📶 上網 / SIM'],['timezone','🕐 時區'],['language','🗣 語言'],['tipping','💵 小費']];
-    h+=`<section id="ess"><div class="sec-title"><span class="stamp">便</span>實用資訊</div><div class="card"><div class="ess">`;
+    const rows=[['currency','💱 貨幣 / 匯率'],['plug','🔌 插頭電壓'],['transit','🚇 交通卡'],['emergency','🚨 緊急電話'],['sim','📶 上網 / SIM'],['timezone','🕐 時區'],['language','🗣 語言'],['tipping','💵 小費']];
+    h+=`<section id="ess"><div class="sec-title"><span class="i">🧭</span>實用資訊</div><div class="card"><div class="ess">`;
     rows.forEach(([k,lbl])=>{if(has(es[k]))h+=`<div class="e"><div class="k">${lbl}</div><div class="v">${E(es[k])}</div></div>`;});
     h+=`</div></div></section>`;
   }
 
   if(has(T.tips)&&T.tips.length){
-    h+=`<section><div class="sec-title"><span class="stamp">心</span>貼士 & 避坑</div><div class="card"><ul class="jp">`;
+    h+=`<section><div class="sec-title"><span class="i">📝</span>貼士 & 避坑</div><div class="card"><ul class="tips">`;
     h+=T.tips.map(x=>`<li>${E(x)}</li>`).join('')+`</ul></div></section>`;
   }
 
-  h+=`<footer>ようこそ福岡へ · AI Travel Brain 生成${has(T.generationDate)?' · '+E(T.generationDate):''}<br>資料整合自公開來源，出發前請核實營業時間 / 票價 / 交通 / 天氣。</footer>`;
+  h+=`<footer>由 AI Travel Brain · 三角色 Swarm 生成${has(T.generationDate)?' · '+E(T.generationDate):''}<br>資料整合自公開來源，出發前請核實營業時間 / 票價 / 交通 / 天氣。</footer>`;
   document.getElementById('app').innerHTML=h;
   wireNav();
 }
@@ -1448,7 +1465,7 @@ function wireNav(){
   addEventListener('scroll',()=>{tt.style.display=scrollY>500?'block':'none'});
 }
 
-/* ===== 🧮 計錢分攤工具 ===== */
+/* ===== 🧮 計錢分攤工具（純前端 localStorage） ===== */
 const EKEY='exp_'+String(T.title||'trip').replace(/\s+/g,'_');
 let EX={members:[],expenses:[],
   rate:(T.expense&&T.expense.rate)||4,
@@ -1474,13 +1491,13 @@ function expSettle(){const net={};EX.members.forEach(m=>net[m.id]=0);EX.expenses
   return {net,tx};}
 function expRender(){const el=document.getElementById('exp');if(!el)return;
   const total=EX.expenses.reduce((s,e)=>s+e.amount,0);let h='';
-  h+=`<div class="sec-title"><span class="stamp">¥</span>計錢分攤 + 預算</div>`;
+  h+=`<div class="sec-title"><span class="i">🧮</span>計錢分攤 + 預算</div>`;
   h+=`<div class="card"><div class="exlab">👥 成員</div><div class="chips">`;
   h+=EX.members.map(m=>`<span class="mchip">${E(m.name)}<button onclick="expDelMember('${m.id}')">✕</button></span>`).join('')||'<span class="muted small">未有成員，先加（例：爸/媽/我/女）</span>';
   h+=`</div><div class="exrow"><input id="mname" placeholder="加成員名" onkeydown="if(event.key==='Enter')expAddMember()"><button class="exbtn" onclick="expAddMember()">＋ 加</button></div></div>`;
   if(EX.members.length){
     h+=`<div class="card"><div class="exlab">➕ 加一筆開支</div>
-      <input id="edesc" placeholder="用途（例：晚餐 / 電車 / 門票）">
+      <input id="edesc" placeholder="用途（例：晚餐 / 的士 / 門票）">
       <div class="exrow"><input id="eamt" type="number" inputmode="decimal" placeholder="金額 ${EX.cur}">
       <select id="epayer">${EX.members.map(m=>`<option value="${m.id}">${E(m.name)} 付</option>`).join('')}</select></div>
       <div class="exlab2">邊個分攤（預設全部）</div>
@@ -1508,7 +1525,7 @@ function expRender(){const el=document.getElementById('exp');if(!el)return;
     <div class="exsum"><span>已用</span><b>${hkf(usedHK)} / ${hkf(EX.budget)}</b></div>
     <div class="exsum"><span>${left>=0?'仲有':'⚠️ 超支'}</span><b class="${left>=0?'pos':'neg'}">${hkf(Math.abs(left))}</b></div>`;}
   h+=`<button class="exbtn ghost full" onclick="expClear()" style="margin-top:12px">🗑 清空記錄</button>
-    <div class="small muted" style="margin-top:9px">數據只存喺你手機（localStorage），離線可用、唔上傳。</div></div>`;
+    <div class="small muted" style="margin-top:8px">數據只存喺你手機（localStorage），離線可用、唔上傳；換手機唔會帶過去。</div></div>`;
   el.innerHTML=h;
 }
 function setMode(m){document.getElementById('view-trip').style.display=m==='trip'?'':'none';
