@@ -13,6 +13,7 @@
     --radius:16px; --maxw:700px;
   }
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html{overflow-x:hidden;-webkit-text-size-adjust:100%}
   html,body{margin:0;padding:0}
   body{
     color:var(--ink); min-height:100vh; font-size:16px; line-height:1.62;
@@ -20,7 +21,7 @@
     padding-bottom:env(safe-area-inset-bottom);
     background-color:var(--cream);
     background-image:radial-gradient(rgba(27,58,140,.11) 1.5px, transparent 1.6px);
-    background-size:18px 18px; background-attachment:fixed;
+    background-size:18px 18px;
   }
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 14px}
   a{color:var(--ai);text-decoration:none;font-weight:700}
@@ -212,7 +213,7 @@
 </div>
 <div id="view-trip"><div class="wrap"><div id="app"></div></div></div>
 <div id="view-tools" style="display:none"><div class="wrap"><div id="exp"></div></div></div>
-<button class="totop" id="totop" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+<button class="totop" id="totop" onclick="goTop()">↑</button>
 
 <script id="trip-data" type="application/json">
 {
@@ -1549,6 +1550,7 @@ function setMode(m){document.getElementById('view-trip').style.display=m==='trip
   document.getElementById('mb-money').classList.toggle('active',m==='money');
   if(m==='money')expRender();scrollTo({top:0});}
 
+function goTop(){var el=document.scrollingElement||document.documentElement||document.body;if('scrollBehavior' in document.documentElement.style){try{window.scrollTo({top:0,left:0,behavior:'smooth'});return;}catch(e){}}el.scrollTop=0;window.scrollTo(0,0);}
 render();
 expLoad();
 </script>
